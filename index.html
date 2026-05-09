@@ -2,82 +2,276 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phones-R-Us | Smart Manufacturing</title>
+
+    <title>Industry 4.0 Manufacturing Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- ================= NAV ================= -->
+<!-- ================= NAVBAR ================= -->
+
 <nav>
-    <div class="logo">Phones-R-Us</div>
+
+    <div class="logo">
+        DIGITAL MANUFACTURING
+    </div>
 
     <ul>
         <li><a href="#overview">Overview</a></li>
         <li><a href="#journey">Journey</a></li>
+        <li><a href="#manufacturing">Manufacturing</a></li>
         <li><a href="#festo">FESTO</a></li>
         <li><a href="#simulation">Simulation</a></li>
     </ul>
+
 </nav>
 
 <!-- ================= HERO ================= -->
+
 <section class="hero">
 
     <div class="hero-content">
 
-        <div class="subtitle">
+        <div class="hero-tag">
             INDUSTRY 4.0 • DIGITAL TWIN • ADDITIVE MANUFACTURING
         </div>
 
-        <h1>Engineering a Smart Manufacturing Ecosystem</h1>
+        <h1>
+            Engineering a Smart<br>
+            Manufacturing Ecosystem
+        </h1>
 
         <p>
-            A complete Industry 4.0 manufacturing journey integrating additive manufacturing,
-            FESTO automation, digital traceability, and Tecnomatix simulation.
+            A complete Industry 4.0 engineering journey integrating additive manufacturing,
+            FESTO automation, QR traceability, and Tecnomatix simulation.
         </p>
-        
-        <a href="#overview" class="btn">Explore System</a>
+
+        <a href="#overview" class="hero-btn">
+            Explore Project
+        </a>
 
     </div>
 
 </section>
 
 <!-- ================= OVERVIEW ================= -->
+
 <section class="section" id="overview">
 
-    <h2 class="title">Project Overview</h2>
+    <div class="content-box">
 
-    <p class="text">
-        Over 50 design iterations were developed using multiple FDM printers.
-        The system was validated through automated FESTO CP Lab stations
-        and production simulation modelling.
-    </p>
+        <div class="section-title">
+            Project Overview
+        </div>
+
+        <div class="section-text">
+            Over 50 design iterations were developed using Ultimaker S3,
+            Ultimaker S5 and Bambu Lab P1S printers to manufacture precision
+            phone casings validated through FESTO CP Lab automation.
+        </div>
+
+        <!-- STATS -->
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h2>50+</h2>
+                <p>Design Iterations</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>3</h2>
+                <p>Industrial Printers</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>6</h2>
+                <p>FESTO Stations</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>9</h2>
+                <p>Weeks Development</p>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<!-- ================= JOURNEY ================= -->
+<!-- ================= ENGINEERING JOURNEY ================= -->
+
 <section class="section" id="journey">
 
-    <h2 class="title">Engineering Journey</h2>
+    <div class="section-title">
+        The Engineering Journey
+    </div>
 
-    <div class="grid">
+    <div class="timeline">
 
-        <div class="card">
-            <h3>Iteration Process</h3>
-            <p>50+ prints across Ultimaker S3, S5 and Bambu Lab P1S with continuous parameter optimisation.</p>
+        <div class="timeline-item">
+            <h3>Week 1 — PrintCity Induction</h3>
+
+            <p>
+                The journey started with the mandatory additive manufacturing
+                induction at PrintCity led by Gary Buller.
+                The session focused on machine operation, QR-based machine access,
+                slicing workflow, and the importance of design responsibility
+                in additive manufacturing.
+            </p>
         </div>
 
-        <div class="card">
-            <h3>Snap-Fit Engineering</h3>
-            <p>0.1–0.3mm tolerance tuning to achieve reliable mechanical assembly with audible click.</p>
+        <div class="timeline-item">
+            <h3>First Prototype Print</h3>
+
+            <p>
+                The first bottom case was printed in black PLA.
+                Although geometrically successful, the dark material made
+                surface inspection and dimensional analysis difficult,
+                leading to the transition toward white PLA material.
+            </p>
         </div>
 
-        <div class="card">
-            <h3>QR Digital Twin</h3>
-            <p>Embedded traceability linking physical parts to full manufacturing digital records.</p>
+        <div class="timeline-item">
+            <h3>Fusion 360 CAD Development</h3>
+
+            <p>
+                The bottom case was rapidly completed following the provided
+                tutorial workflow, while the top case required interpreting
+                engineering drawings independently and redesigning geometry
+                through multiple iterations.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Daily PrintCity Experimentation</h3>
+
+            <p>
+                From Week 4 onward, continuous experimentation became routine.
+                Multiple prints were prepared every morning before lectures,
+                testing different tolerances, support structures, print speeds,
+                surface quality settings, and snap-fit dimensions.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>QR Code Integration Challenge</h3>
+
+            <p>
+                One major challenge involved embedding a scannable QR code
+                within limited geometry dimensions while maintaining both
+                aesthetics and functionality.
+                Dual-material printing using white PLA and black filament
+                was tested to maximise contrast and readability.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>FESTO CP Lab Validation</h3>
+
+            <p>
+                During Week 8, multiple iterations were tested on the FESTO CP Lab.
+                Some parts passed the Measuring station but failed during the
+                Muscle Press operation due to excessive snap-fit force or
+                dimensional inaccuracies.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Final Recovery Sprint</h3>
+
+            <p>
+                Two days before submission, several bags containing printed parts
+                were accidentally left on a bus.
+                The remaining time was used to rapidly reproduce improved versions
+                using accumulated manufacturing knowledge and validated tolerances.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Final Successful Assembly</h3>
+
+            <p>
+                The final iterations successfully passed the FESTO measuring
+                and muscle press validation stages while achieving the intended
+                snap-fit behaviour and assembly performance.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= MANUFACTURING ================= -->
+
+<section class="section" id="manufacturing">
+
+    <div class="section-title">
+        Additive Manufacturing Optimisation
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+            <img src="images/print1.jpeg">
+            <div class="image-caption">
+                Initial Bottom Case Printed in Black PLA
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="images/print2.jpg">
+            <div class="image-caption">
+                Transition Toward White PLA for Inspection
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="images/printer.png">
+            <div class="image-caption">
+                Ultimaker S5 Production Workflow
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= QR TRACEABILITY ================= -->
+
+<section class="section">
+
+    <div class="section-title">
+        Digital Twin & QR Traceability
+    </div>
+
+    <div class="section-text">
+        Every component was linked with a digital record system through
+        embedded QR integration to enable traceability and identification
+        across the manufacturing workflow.
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+            <img src="images/qr-code.png">
+            <div class="image-caption">
+                Embedded Dual-Material QR Code
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="images/digitalrecord.png">
+            <div class="image-caption">
+                Digital Part Record Documentation
+            </div>
         </div>
 
     </div>
@@ -85,32 +279,98 @@
 </section>
 
 <!-- ================= FESTO ================= -->
-<section class="section dark" id="festo">
 
-    <h2 class="title">FESTO CP Lab Validation</h2>
+<section class="section" id="festo">
 
-    <p class="text">
-        Parts were tested through automated Measuring and Muscle Press stations.
-        Snap-fit geometry was the critical pass/fail factor.
-    </p>
+    <div class="section-title">
+        FESTO CP Lab Validation
+    </div>
+
+    <div class="section-text">
+
+        Final assemblies were validated through FESTO CP Lab stations including:
+
+        <br><br>
+
+        • Measuring Station<br>
+        • Muscle Press<br>
+        • Pick-by-Light<br>
+        • Magazine<br>
+        • Tunnel Furnace<br>
+        • Workpiece Discharge
+
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+            <img src="images/festo.jpeg">
+            <div class="image-caption">
+                FESTO CP Lab Conveyor System
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="images/musclepress.jpeg">
+            <div class="image-caption">
+                Muscle Press Snap-Fit Validation
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="images/finalpart.jpg">
+            <div class="image-caption">
+                Final Validated Assembly
+            </div>
+        </div>
+
+    </div>
 
 </section>
 
 <!-- ================= SIMULATION ================= -->
+
 <section class="section" id="simulation">
 
-    <h2 class="title">Tecnomatix Simulation</h2>
+    <div class="section-title">
+        Tecnomatix Plant Simulation
+    </div>
 
-    <p class="text">
-        Simulation confirmed 52,160 annual output with 3D printing as the system bottleneck.
-        Worker scaling had no effect — only printer capacity matters.
-    </p>
+    <div class="section-text">
+        Simulation analysis demonstrated that additive manufacturing
+        throughput formed the primary production bottleneck rather than
+        operator availability within the workflow.
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+            <img src="images/simulation.jpg">
+            <div class="image-caption">
+                Tecnomatix Plant Simulation Model
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="images/chart.jpg">
+            <div class="image-caption">
+                Production Bottleneck Analysis
+            </div>
+        </div>
+
+    </div>
 
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    MSc Robotics Engineering • Digital Manufacturing Case Study
+
+    MSc Robotics Engineering • Manchester Metropolitan University
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
