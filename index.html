@@ -1,120 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Phones-R-Us | Digital Manufacturing</title>
 
-    <style>
-
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            font-family: Arial, sans-serif;
-            background:#f5f7fa;
-            color:#1B2A4A;
-            line-height:1.6;
-        }
-
-        .hero{
-            height:100vh;
-            background:linear-gradient(to right,#1B2A4A,#00B4A6);
-            color:white;
-
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-
-            text-align:center;
-            padding:20px;
-        }
-
-        .hero h1{
-            font-size:4rem;
-            margin-bottom:20px;
-        }
-
-        .hero p{
-            font-size:1.3rem;
-            max-width:800px;
-        }
-
-        .section{
-            padding:80px 10%;
-        }
-
-        .section h2{
-            font-size:2.5rem;
-            margin-bottom:20px;
-            color:#00B4A6;
-        }
-
-        .section p{
-            font-size:1.1rem;
-            max-width:900px;
-        }
-
-        .dark{
-            background:#1B2A4A;
-            color:white;
-        }
-
-        .dark h2{
-            color:#00B4A6;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            Phones-R-Us
+        </div>
+
+        <ul>
+
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#printing">Manufacturing</a></li>
+            <li><a href="#festo">FESTO</a></li>
+            <li><a href="#simulation">Simulation</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+
     <section class="hero">
 
-        <h1>Phones-R-Us</h1>
+        <div class="overlay"></div>
 
-        <p>
-            From Prototype to Smart Manufacturing —
-            An Industry 4.0 Additive Manufacturing Journey
-        </p>
+        <div class="hero-content">
+
+            <h1>
+                From Prototype
+                <br>
+                to Smart Manufacturing
+            </h1>
+
+            <p>
+                A Digital Manufacturing Journey integrating
+                Additive Manufacturing,
+                FESTO Automation,
+                QR Traceability,
+                and Tecnomatix Plant Simulation
+                within an Industry 4.0 workflow.
+            </p>
+
+            <a href="#overview" class="hero-btn">
+                Explore Project
+            </a>
+
+        </div>
 
     </section>
 
-    <section class="section">
+    <!-- OVERVIEW -->
 
-        <h2>Project Overview</h2>
+    <section class="section" id="overview">
 
-        <p>
-            This project investigates additive manufacturing,
+        <div class="section-title">
+            Project Overview
+        </div>
+
+        <div class="section-text">
+
+            This project investigates the development of
+            3D printed phone case assemblies using FDM additive manufacturing.
+
+            The work integrates:
+            manufacturing optimisation,
             digital traceability,
-            FESTO automation,
+            FESTO CP Lab automation,
             and Tecnomatix Plant Simulation
-            within an Industry 4.0 manufacturing workflow.
-        </p>
+            to explore modern Industry 4.0 manufacturing systems.
+
+        </div>
 
     </section>
 
-    <section class="section dark">
+    <!-- MANUFACTURING -->
 
-        <h2>FDM Manufacturing Journey</h2>
+    <section class="section dark-section" id="printing">
 
-        <p>
-            Over 50 print iterations were produced using
-            Ultimaker S5,
+        <div class="section-title">
+            Additive Manufacturing Journey
+        </div>
+
+        <div class="section-text">
+
+            Over 50 print iterations were manufactured
+            using Ultimaker S5,
             Ultimaker S3,
-            and Bambu Lab P1S printers
-            to optimise dimensional accuracy,
-            snap-fit performance,
-            and QR-code traceability.
-        </p>
+            and Bambu Lab P1S printers.
+
+            Multiple parameters including:
+            print speed,
+            infill,
+            support structures,
+            brim width,
+            and snap-fit tolerances
+            were systematically optimised
+            to achieve dimensional accuracy
+            and successful FESTO assembly.
+
+        </div>
 
     </section>
+
+    <!-- FESTO -->
+
+    <section class="section" id="festo">
+
+        <div class="section-title">
+            FESTO CP Lab Validation
+        </div>
+
+        <div class="section-text">
+
+            Final assemblies were validated
+            through the FESTO CP Lab automated assembly line,
+            including:
+            Measuring,
+            Muscle Press,
+            Tunnel Furnace,
+            and Workpiece Discharge stations.
+
+            The Muscle Press station became
+            the critical validation point
+            for snap-fit optimisation.
+
+        </div>
+
+    </section>
+
+    <!-- SIMULATION -->
+
+    <section class="section dark-section" id="simulation">
+
+        <div class="section-title">
+            Tecnomatix Plant Simulation
+        </div>
+
+        <div class="section-text">
+
+            A digital production model was developed
+            using Tecnomatix Plant Simulation
+            to analyse throughput,
+            bottlenecks,
+            printer utilisation,
+            and production scalability.
+
+            Experiment Manager studies demonstrated
+            that 3D printing capacity —
+            not worker count —
+            was the primary system bottleneck.
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        MSc Robotics and Automation Engineering |
+        Manchester Metropolitan University
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
