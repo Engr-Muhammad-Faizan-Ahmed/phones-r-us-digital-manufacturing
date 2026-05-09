@@ -199,3 +199,114 @@ footer {
     border-top: 1px solid rgba(0,245,255,0.1);
     color: #888;
 }
+
+/* ==========================================
+   TIMELINE SECTION
+========================================== */
+
+.timeline {
+    position: relative;
+    margin-top: 70px;
+    padding-left: 40px;
+    border-left: 2px solid rgba(0,245,255,0.15);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background: var(--cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,245,255,0.7);
+}
+
+.timeline-content {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(0,245,255,0.12);
+    padding: 35px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0,245,255,0.12);
+}
+
+.week-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid rgba(0,245,255,0.3);
+    border-radius: 30px;
+    color: var(--cyan);
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--cyan);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.timeline-content p {
+    color: #cbd5e1;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.timeline-image {
+    margin-top: 30px;
+}
+
+.timeline-image img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(0,245,255,0.12);
+    transition: 0.4s;
+}
+
+.timeline-image img:hover {
+    transform: scale(1.02);
+}
+
+.caption {
+    margin-top: 12px;
+    color: #94a3b8;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -30px;
+    }
+
+    .timeline-content {
+        padding: 25px;
+    }
+
+    .timeline-content h3 {
+        font-size: 22px;
+    }
+
+}
