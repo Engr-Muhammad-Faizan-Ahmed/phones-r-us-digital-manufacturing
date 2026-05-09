@@ -538,3 +538,73 @@ footer {
     color: #cbd5e1;
     line-height: 1.9;
 }
+
+/* ==========================================
+   PROCESS PARAMETERS TABLE
+========================================== */
+
+.parameter-table {
+    margin-top: 60px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    border: 1px solid rgba(0,245,255,0.12);
+
+    background: rgba(255,255,255,0.03);
+
+    backdrop-filter: blur(10px);
+}
+
+.table-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        2fr;
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+
+    transition: 0.3s;
+}
+
+.table-row:hover {
+    background: rgba(0,245,255,0.04);
+}
+
+.table-row div {
+    padding: 22px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.table-header {
+    background: rgba(0,245,255,0.08);
+}
+
+.table-header div {
+    color: var(--cyan);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.table-row div:first-child {
+    color: white;
+    font-weight: 500;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .table-row {
+        grid-template-columns: 1fr;
+    }
+
+    .table-row div {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+}
