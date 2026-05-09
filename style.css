@@ -327,6 +327,12 @@ nav ul li a:hover {
 
     transition: 0.5s;
 
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
 }
 
 .image-card:hover {
@@ -341,21 +347,42 @@ nav ul li a:hover {
 
 }
 
+.image-card:hover .image-caption {
+
+    color: var(--teal);
+
+    transition: 0.4s;
+
+}
+
 .image-card img {
 
     width: 100%;
 
-    height: 260px;
+    height: 420px;
 
     object-fit: cover;
+
+    display: block;
 
 }
 
 .image-caption {
 
-    padding: 18px;
+    padding: 20px;
 
     color: #475569;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    background: white;
+
+    border-top:
+        1px solid rgba(0,0,0,0.05);
+
+    font-weight: 500;
 
 }
 
