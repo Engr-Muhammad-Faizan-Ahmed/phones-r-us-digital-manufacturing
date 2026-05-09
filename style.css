@@ -347,6 +347,14 @@ nav ul li a:hover {
 
 }
 
+.image-card:hover .image-caption {
+
+    color: var(--teal);
+
+    transition: 0.4s;
+
+}
+
 .image-card img {
 
     width: 100%;
