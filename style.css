@@ -310,3 +310,125 @@ footer {
     }
 
 }
+
+/* ==========================================
+   INDUSTRIAL STATS SECTION
+========================================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(0,245,255,0.12);
+    border-radius: 18px;
+    padding: 40px 25px;
+    text-align: center;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,245,255,0.05),
+        transparent
+    );
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(0,245,255,0.15);
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--cyan);
+    text-shadow: 0 0 20px rgba(0,245,255,0.3);
+}
+
+.stat-label {
+    margin-top: 12px;
+    color: #cbd5e1;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* ================= TECH GRID ================= */
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+    margin-top: 70px;
+}
+
+.tech-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(0,245,255,0.10);
+    border-radius: 20px;
+    padding: 35px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-card::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,245,255,0.08), transparent 70%);
+    top: -50%;
+    left: -50%;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px rgba(0,245,255,0.14);
+}
+
+.tech-card h3 {
+    color: var(--cyan);
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.tech-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.tech-card ul {
+    padding-left: 20px;
+}
+
+.tech-card li {
+    color: #94a3b8;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .stat-number {
+        font-size: 38px;
+    }
+
+    .tech-card {
+        padding: 28px;
+    }
+
+}
