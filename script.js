@@ -1,70 +1,89 @@
-/* =========================================
-   INDUSTRY 4.0 PORTFOLIO ANIMATION SYSTEM
-========================================= */
+/* =========================
+FILE: script.js
+========================= */
 
-const reveals = document.querySelectorAll(
-  ".section, .image-card, .timeline-item, .stat-card"
+const revealElements = document.querySelectorAll(
+    ".section, .image-card, .timeline-item, .feature-card, .stat-card"
 );
 
+window.addEventListener("scroll", revealOnScroll);
+
+function revealOnScroll() {
+
+    const triggerBottom =
+        window.innerHeight * 0.85;
+
+    revealElements.forEach((element) => {
+
+        const top =
+            element.getBoundingClientRect().top;
+
+        if(top < triggerBottom){
+
+            element.classList.add("show");
+
+        }
+
+    });
+
+}
+
+revealOnScroll();
+
+/* ================= HERO PARALLAX ================= */
+
 window.addEventListener("scroll", () => {
 
-  const trigger = window.innerHeight * 0.85;
+    const scroll =
+        window.scrollY;
 
-  reveals.forEach((item) => {
+    const hero =
+        document.querySelector(".hero");
 
-    const top = item.getBoundingClientRect().top;
-
-    if (top < trigger) {
-      item.classList.add("show");
-    }
-
-  });
+    hero.style.backgroundPositionY =
+        `${scroll * 0.5}px`;
 
 });
 
-/* =========================================
-   PARALLAX HERO EFFECT
-========================================= */
+/* ================= ACTIVE NAV ================= */
+
+const sections =
+    document.querySelectorAll("section");
+
+const navLinks =
+    document.querySelectorAll("nav ul li a");
 
 window.addEventListener("scroll", () => {
 
-  const scrollY = window.scrollY;
+    let current = "";
 
-  const hero = document.querySelector(".hero");
+    sections.forEach((section) => {
 
-  hero.style.backgroundPositionY = `${scrollY * 0.5}px`;
+        const sectionTop =
+            section.offsetTop;
 
-});
+        if(scrollY >= sectionTop - 200){
 
-/* =========================================
-   ACTIVE NAVIGATION HIGHLIGHT
-========================================= */
+            current =
+                section.getAttribute("id");
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
+        }
 
-window.addEventListener("scroll", () => {
+    });
 
-  let current = "";
+    navLinks.forEach((link) => {
 
-  sections.forEach((section) => {
+        link.classList.remove("active");
 
-    const sectionTop = section.offsetTop;
+        if(
+            link.getAttribute("href")
+            === `#${current}`
+        ){
 
-    if (scrollY >= sectionTop - 200) {
-      current = section.getAttribute("id");
-    }
+            link.classList.add("active");
 
-  });
+        }
 
-  navLinks.forEach((link) => {
-
-    link.classList.remove("active");
-
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-
-  });
+    });
 
 });
