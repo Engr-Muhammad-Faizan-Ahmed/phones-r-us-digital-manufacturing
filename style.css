@@ -162,3 +162,279 @@ background:#0B1220;
 color:white;
 text-align:center;
 }
+
+/* =========================================
+   SCROLL REVEAL SYSTEM
+========================================= */
+
+.section,
+.image-card,
+.timeline-item,
+.stat-card {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* =========================================
+   ELECTRIC BACKGROUND FLOW
+========================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(0,180,166,0.12), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(27,42,74,0.12), transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(0,180,166,0.08), transparent 50%);
+
+    animation: bgFlow 14s infinite alternate ease-in-out;
+
+    z-index: -1;
+}
+
+@keyframes bgFlow {
+
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1.1) rotate(2deg);
+    }
+
+}
+
+/* =========================================
+   HERO GLOW
+========================================= */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at center,
+        rgba(0,180,166,0.18),
+        transparent 60%);
+
+    animation: pulseGlow 6s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+
+    0%,100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+/* =========================================
+   IMAGE HOVER UPGRADE
+========================================= */
+
+.image-card {
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+}
+
+.image-card:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.25),
+        0 0 30px rgba(0,180,166,0.35);
+
+}
+
+.image-card img {
+
+    transition:
+        transform 0.7s ease;
+
+}
+
+.image-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+/* =========================================
+   NAVBAR GLASSMORPHISM
+========================================= */
+
+nav {
+
+    background: rgba(255,255,255,0.72);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.15);
+
+}
+
+/* =========================================
+   ACTIVE NAV LINK
+========================================= */
+
+nav ul li a.active {
+
+    color: #00B4A6;
+
+}
+
+/* =========================================
+   HERO TITLE GLOW
+========================================= */
+
+.hero h1 {
+
+    text-shadow:
+        0 0 20px rgba(0,180,166,0.4);
+
+}
+
+/* =========================================
+   BUTTON EFFECT
+========================================= */
+
+.hero-btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.hero-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.35),
+            transparent
+        );
+
+    transition: 0.8s;
+}
+
+.hero-btn:hover::before {
+
+    left: 100%;
+
+}
+
+.hero-btn:hover {
+
+    box-shadow:
+        0 0 25px rgba(0,180,166,0.45);
+
+}
+
+/* =========================================
+   SECTION TRANSITION
+========================================= */
+
+.section {
+
+    position: relative;
+
+}
+
+.section::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    width: 60%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            rgba(0,180,166,0.2),
+            transparent
+        );
+
+    transform: translateX(-50%);
+
+}
+
+/* =========================================
+   CUSTOM SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #E5E7EB;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(
+        #1B2A4A,
+        #00B4A6
+    );
+
+    border-radius: 20px;
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    nav{
+        padding:15px 20px;
+    }
+
+}
