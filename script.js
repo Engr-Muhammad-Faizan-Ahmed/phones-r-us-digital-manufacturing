@@ -1,10 +1,7 @@
 /* ==========================================
-   INDUSTRY 4.0 ENGINEERING PORTFOLIO (V2)
-   Cinematic Visual Upgrade — Phones-R-Us
-   Siemens / FESTO Inspired Design System
+   INDUSTRY 4.0 ENGINEERING PORTFOLIO (V3)
+   Visual Upgrade Pack — Cinematic Engineering UI
 ========================================== */
-
-/* ---------- ROOT SYSTEM ---------- */
 
 :root {
     --navy: #1B2A4A;
@@ -23,8 +20,6 @@
     --max-width: 1200px;
 }
 
-/* ---------- GLOBAL RESET ---------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -37,9 +32,10 @@ body {
     color: var(--navy);
     line-height: 1.6;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-/* ---------- NAVBAR (IMPROVED INDUSTRIAL GLASS) ---------- */
+/* ================= NAVBAR ================= */
 
 nav {
     position: fixed;
@@ -53,13 +49,11 @@ nav {
     backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(0,0,0,0.06);
     z-index: 1000;
-    transition: var(--transition);
 }
 
 nav .logo {
     font-weight: 700;
     letter-spacing: 1px;
-    color: var(--navy);
 }
 
 nav ul {
@@ -79,7 +73,7 @@ nav ul li a:hover {
     color: var(--teal);
 }
 
-/* ---------- HERO (CINEMATIC ENGINEERING LANDING) ---------- */
+/* ================= HERO (CINEMATIC INDUSTRIAL LANDING) ================= */
 
 .hero {
     height: 100vh;
@@ -89,12 +83,24 @@ nav ul li a:hover {
     text-align: center;
     position: relative;
 
-    background: linear-gradient(135deg, #0B1220, #1B2A4A);
-    color: white;
-    padding: 0 20px;
+    /* 🔥 HERO BACKGROUND IMAGE LAYER */
+    background: url("images/hero.jpg") center/cover no-repeat;
+
+    /* fallback overlay gradient */
 }
 
 .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(11,18,32,0.92),
+        rgba(27,42,74,0.85)
+    );
+}
+
+.hero::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -108,10 +114,11 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 56px;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
     letter-spacing: -1px;
+    color: white;
 }
 
 .hero p {
@@ -136,7 +143,7 @@ nav ul li a:hover {
     box-shadow: var(--shadow-hover);
 }
 
-/* ---------- SECTION SYSTEM (PREMIUM SPACING) ---------- */
+/* ================= SECTION SYSTEM ================= */
 
 .section {
     padding: 120px 10%;
@@ -152,7 +159,6 @@ nav ul li a:hover {
     font-size: 34px;
     font-weight: 700;
     margin-bottom: 20px;
-    position: relative;
 }
 
 .section-title::after {
@@ -170,14 +176,47 @@ nav ul li a:hover {
     max-width: 900px;
 }
 
-/* ---------- GRID / CARDS (ENGINEERING PANELS) ---------- */
+/* ================= IMAGE GRID (ENGINEERING SHOWCASE) ================= */
 
-.grid {
+.image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
     margin-top: 40px;
 }
+
+.image-card {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: var(--transition);
+    background: white;
+}
+
+.image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-card:hover img {
+    transform: scale(1.08);
+}
+
+.image-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.image-caption {
+    padding: 14px;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+/* ================= CARDS ================= */
 
 .card {
     background: var(--card);
@@ -186,21 +225,6 @@ nav ul li a:hover {
     box-shadow: var(--shadow);
     transition: var(--transition);
     text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    background: var(--teal);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: var(--transition);
 }
 
 .card:hover {
@@ -208,11 +232,7 @@ nav ul li a:hover {
     box-shadow: var(--shadow-hover);
 }
 
-.card:hover::before {
-    transform: scaleX(1);
-}
-
-/* ---------- TIMELINE (ENGINEERING STORY MODE) ---------- */
+/* ================= TIMELINE ================= */
 
 .timeline {
     margin-top: 50px;
@@ -223,15 +243,6 @@ nav ul li a:hover {
 .timeline-item {
     margin-bottom: 35px;
     position: relative;
-}
-
-.timeline-item h3 {
-    font-size: 18px;
-    margin-bottom: 6px;
-}
-
-.timeline-item p {
-    color: var(--gray);
 }
 
 .timeline-item::before {
@@ -246,41 +257,35 @@ nav ul li a:hover {
     box-shadow: 0 0 0 4px rgba(0,180,166,0.15);
 }
 
-/* ---------- FOOTER ---------- */
+.timeline-item h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.timeline-item p {
+    color: var(--gray);
+}
+
+/* ================= FOOTER ================= */
 
 footer {
     text-align: center;
     padding: 50px;
     background: var(--dark);
     color: white;
-    margin-top: 60px;
 }
 
-/* ---------- ANIMATION ---------- */
+/* ================= ANIMATION ================= */
 
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
-    nav {
-        padding: 15px 20px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .section {
-        padding: 80px 20px;
-    }
+    nav { padding: 15px 20px; }
+    .hero h1 { font-size: 38px; }
+    .section { padding: 80px 20px; }
 }
