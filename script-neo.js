@@ -1,0 +1,201 @@
+/* ==========================================
+   NEON INDUSTRY 4.0 CYBER THEME
+========================================== */
+
+:root {
+    --bg: #05060a;
+    --cyan: #00f5ff;
+    --blue: #3b82f6;
+    --purple: #8b5cf6;
+    --text: #e5e7eb;
+}
+
+/* ================= GLOBAL ================= */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* animated grid background */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(rgba(0,245,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,245,255,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: -2;
+    animation: moveGrid 20s linear infinite;
+}
+
+@keyframes moveGrid {
+    from { transform: translateY(0); }
+    to { transform: translateY(60px); }
+}
+
+/* glow layer */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(0,245,255,0.15), transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(139,92,246,0.12), transparent 50%);
+    z-index: -1;
+}
+
+/* ================= NAV ================= */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(10,10,20,0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,245,255,0.15);
+}
+
+nav .logo {
+    color: var(--cyan);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--cyan);
+    text-shadow: 0 0 10px var(--cyan);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.subtitle {
+    color: var(--cyan);
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 0;
+    text-shadow: 0 0 25px rgba(0,245,255,0.4);
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #b5b5b5;
+    line-height: 1.6;
+}
+
+/* button */
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 32px;
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0,245,255,0.2);
+}
+
+.btn:hover {
+    background: var(--cyan);
+    color: black;
+    box-shadow: 0 0 25px var(--cyan);
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 120px 10%;
+}
+
+.dark {
+    background: rgba(255,255,255,0.02);
+}
+
+.title {
+    font-size: 42px;
+    color: var(--cyan);
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0,245,255,0.3);
+}
+
+.text {
+    max-width: 900px;
+    font-size: 18px;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* ================= CARDS ================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid rgba(0,245,255,0.15);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,245,255,0.2);
+}
+
+.card h3 {
+    color: var(--cyan);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 50px;
+    border-top: 1px solid rgba(0,245,255,0.1);
+    color: #888;
+}
