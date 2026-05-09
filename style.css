@@ -463,3 +463,78 @@ footer {
     color: #94a3b8;
     font-size: 14px;
 }
+
+/* ==========================================
+   ENGINEERING CHALLENGES
+========================================== */
+
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.challenge-card {
+    position: relative;
+    padding: 35px;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,80,80,0.08),
+            rgba(0,245,255,0.03)
+        );
+
+    border: 1px solid rgba(255,80,80,0.15);
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.challenge-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.05),
+        transparent
+    );
+
+    transition: 0.7s;
+}
+
+.challenge-card:hover::before {
+    left: 100%;
+}
+
+.challenge-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 35px rgba(255,80,80,0.15),
+        0 0 20px rgba(0,245,255,0.08);
+}
+
+.challenge-card h3 {
+    color: #ff7b7b;
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+.challenge-card p {
+    color: #cbd5e1;
+    line-height: 1.9;
+}
