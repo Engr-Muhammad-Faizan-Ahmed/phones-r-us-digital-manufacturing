@@ -1,17 +1,16 @@
-const cards = document.querySelectorAll('.image-card');
+const reveals = document.querySelectorAll('.section');
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll',()=>{
 
-    const triggerBottom = window.innerHeight * 0.85;
+reveals.forEach(section=>{
 
-    cards.forEach(card => {
+const top=section.getBoundingClientRect().top;
+const height=window.innerHeight;
 
-        const cardTop = card.getBoundingClientRect().top;
+if(top<height-100){
+section.classList.add('show');
+}
 
-        if(cardTop < triggerBottom){
-            card.classList.add('show');
-        }
-
-    });
+});
 
 });
