@@ -1,111 +1,589 @@
+<!-- =========================
+FILE: index.html
+========================= -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Phones-R-Us | Digital Manufacturing Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Phones-R-Us | Digital Manufacturing Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<nav>
-<div class="logo">Phones-R-Us</div>
+<!-- ================= NAVBAR ================= -->
 
-<ul>
-<li><a href="#overview">Overview</a></li>
-<li><a href="#journey">Journey</a></li>
-<li><a href="#festo">FESTO</a></li>
-<li><a href="#simulation">Simulation</a></li>
-</ul>
+<nav>
+
+    <div class="logo">
+        Phones-R-Us
+    </div>
+
+    <ul>
+
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#manufacturing">Manufacturing</a></li>
+        <li><a href="#industry4">Industry 4.0</a></li>
+        <li><a href="#festo">FESTO</a></li>
+        <li><a href="#simulation">Simulation</a></li>
+
+    </ul>
+
 </nav>
+
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
-<video autoplay muted loop playsinline class="hero-video">
-<source src="videos/factory.mp4" type="video/mp4">
-</video>
+    <div class="hero-overlay"></div>
 
-<div class="hero-overlay"></div>
+    <div class="hero-content">
 
-<div class="hero-content">
+        <h1>
+            From Prototype<br>
+            to Smart Manufacturing
+        </h1>
 
-<span class="hero-tag">
-INDUSTRY 4.0 • ADDITIVE MANUFACTURING • DIGITAL TWIN
-</span>
+        <p>
+            MSc Robotics Engineering Digital Manufacturing Portfolio integrating
+            Additive Manufacturing, FESTO Automation,
+            QR Traceability, Digital Twin Technology,
+            and Tecnomatix Plant Simulation.
+        </p>
 
-<h1>
-Phones-R-Us<br>
-Smart Manufacturing
-</h1>
+        <a href="#overview" class="hero-btn">
+            Explore Project
+        </a>
 
-<p>
-A complete engineering journey integrating
-3D printing, FESTO automation,
-QR traceability and Tecnomatix simulation.
-</p>
-
-<a href="#overview" class="hero-btn">Explore Project</a>
-
-</div>
+    </div>
 
 </section>
+
+<!-- ================= OVERVIEW ================= -->
 
 <section class="section" id="overview">
 
-<h2>Project Overview</h2>
+    <div class="section-title">
+        Project Overview
+    </div>
 
-<p>
-Over 50 design iterations were developed using
-Ultimaker S5, Ultimaker S3 and Bambu Lab P1S
-to manufacture precision phone casings
-validated through FESTO CP Lab automation.
-</p>
+    <div class="section-text">
+
+        This project explores the end-to-end digital manufacturing
+        of 3D printed phone casings for the fictional client
+        Phones-R-Us.
+
+        The project integrates additive manufacturing,
+        FESTO automation systems,
+        Industry 4.0 principles,
+        digital traceability,
+        and Tecnomatix Plant Simulation
+        to achieve an annual production target
+        of 50,000 units.
+
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+
+            <img src="images/hero.png">
+
+            <div class="image-caption">
+                PrintCity Additive Manufacturing Facility
+            </div>
+
+        </div>
+
+        <div class="image-card">
+
+            <img src="images/factory.png">
+
+            <div class="image-caption">
+                Industry 4.0 Smart Manufacturing Concept
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats-section">
+
+    <div class="stat-card">
+
+        <h2>50+</h2>
+
+        <p>
+            Print Iterations
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>52,160</h2>
+
+        <p>
+            Simulated Annual Units
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>48</h2>
+
+        <p>
+            Printers Required
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>6</h2>
+
+        <p>
+            FESTO Stations
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= JOURNEY ================= -->
 
 <section class="section" id="journey">
 
-<h2>The Engineering Journey</h2>
+    <div class="section-title">
+        Engineering Journey
+    </div>
 
-<p>
-Daily PrintCity experimentation,
-parameter optimisation,
-snap-fit redesign,
-and final recovery after losing all printed parts
-two days before submission.
-</p>
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <h3>
+                Week 1 — PrintCity Induction
+            </h3>
+
+            <p>
+
+                The journey began with the mandatory additive manufacturing induction
+                at PrintCity led by Gary Buller.
+
+                The induction covered machine operation,
+                material handling,
+                workflow procedures,
+                and industrial printing practices before producing
+                the very first black PLA bottom case.
+
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <h3>
+                Week 2 — CAD Design Development
+            </h3>
+
+            <p>
+
+                The bottom case was developed using the provided tutorial,
+                while the top case required independent interpretation
+                of engineering drawings in Fusion 360.
+
+                Early versions intentionally excluded snap-fit geometry
+                to validate the primary form first.
+
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <h3>
+                Weeks 3–5 — Parameter Optimisation
+            </h3>
+
+            <p>
+
+                Approximately 50 print iterations were produced using
+                Ultimaker S3,
+                Ultimaker S5,
+                and Bambu Lab P1S printers.
+
+                Parameters such as infill,
+                speed,
+                supports,
+                skin layers,
+                brim width,
+                and snap-fit tolerances
+                were systematically optimised.
+
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <h3>
+                Weeks 6–7 — QR Traceability System
+            </h3>
+
+            <p>
+
+                A dual extrusion QR code system was integrated
+                into the top case using white PLA for the body
+                and black PLA for QR code and supports.
+
+                Each QR code linked directly
+                to a Digital Part Record PDF,
+                implementing a component-level digital twin.
+
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <h3>
+                Week 8 — FESTO CP Lab Testing
+            </h3>
+
+            <p>
+
+                Final iterations were tested on the FESTO CP Lab assembly line.
+
+                Multiple cases successfully passed
+                the Measuring and Muscle Press stations,
+                while others required further tolerance refinement
+                due to tight or loose snap-fit conditions.
+
+            </p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <h3>
+                Week 9 — Final Recovery
+            </h3>
+
+            <p>
+
+                One week before submission,
+                all physical iterations were accidentally lost during travel.
+
+                With only two days remaining,
+                the final successful versions were rebuilt entirely
+                from accumulated manufacturing knowledge,
+                producing parts that passed both FESTO validation stages.
+
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section class="section" id="festo">
+<!-- ================= MANUFACTURING ================= -->
 
-<h2>FESTO Validation</h2>
+<section class="section dark-section" id="manufacturing">
 
-<p>
-Critical validation through Measuring
-and Muscle Press stations ensured
-precise tolerance and successful assembly.
-</p>
+    <div class="section-title">
+        Additive Manufacturing Journey
+    </div>
+
+    <div class="section-text">
+
+        Different parameter combinations were explored
+        to improve surface finish,
+        dimensional accuracy,
+        snap-fit behaviour,
+        and QR code readability.
+
+        The project highlighted the inconsistency challenges
+        of FDM manufacturing
+        and the importance of iterative engineering refinement.
+
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+
+            <img src="images/print1.jpeg">
+
+            <div class="image-caption">
+                Initial Black PLA Bottom Case
+            </div>
+
+        </div>
+
+        <div class="image-card">
+
+            <img src="images/print2.jpg">
+
+            <div class="image-caption">
+                Transition to White PLA for Improved Inspection
+            </div>
+
+        </div>
+
+        <div class="image-card">
+
+            <img src="images/printer.png">
+
+            <div class="image-caption">
+                Ultimaker S5 Production Environment
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section class="section" id="simulation">
+<!-- ================= INDUSTRY 4.0 ================= -->
 
-<h2>Tecnomatix Simulation</h2>
+<section class="section" id="industry4">
 
-<p>
-Simulation proved that printing throughput
-was the true bottleneck rather than labour,
-achieving 52,160 annual units.
-</p>
+    <div class="section-title">
+        Industry 4.0 Integration
+    </div>
+
+    <div class="cards-grid">
+
+        <div class="feature-card">
+
+            <h3>Additive Manufacturing</h3>
+
+            <p>
+                FDM 3D printing enabled rapid iteration,
+                parameter optimisation,
+                and distributed production capability.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>Digital Twin</h3>
+
+            <p>
+                Embedded QR codes connected physical parts
+                to digital manufacturing records.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>Automation</h3>
+
+            <p>
+                FESTO CP Lab validated part compatibility
+                through automated assembly operations.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>Simulation</h3>
+
+            <p>
+                Tecnomatix Plant Simulation identified
+                the production bottleneck
+                and validated annual throughput targets.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= FESTO ================= -->
+
+<section class="section dark-section" id="festo">
+
+    <div class="section-title">
+        FESTO CP Lab Validation
+    </div>
+
+    <div class="section-text">
+
+        The FESTO CP Lab assembly line consisted of six integrated stations:
+        Magazine,
+        Measuring,
+        Pick-by-Light,
+        Muscle Press,
+        Tunnel Furnace,
+        and Workpiece Discharge.
+
+        The critical validation stages were the Measuring station
+        and Muscle Press station,
+        where dimensional accuracy
+        and snap-fit functionality were evaluated.
+
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+
+            <img src="images/festo.jpeg">
+
+            <div class="image-caption">
+                FESTO CP Lab Assembly Line
+            </div>
+
+        </div>
+
+        <div class="image-card">
+
+            <img src="images/musclepress.jpeg">
+
+            <div class="image-caption">
+                Muscle Press Snap-Fit Validation
+            </div>
+
+        </div>
+
+        <div class="image-card">
+
+            <img src="images/finalpart.jpg">
+
+            <div class="image-caption">
+                Final Assembled Phone Case
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= DIGITAL TWIN ================= -->
+
+<section class="section">
+
+    <div class="section-title">
+        QR Traceability & Digital Twin
+    </div>
+
+    <div class="section-text">
+
+        Each phone case included an embedded QR code
+        printed using dual extrusion technology.
+
+        Scanning the QR code opened a Digital Part Record PDF
+        containing manufacturing data,
+        printer information,
+        parameters,
+        inspection status,
+        and traceability information.
+
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+
+            <img src="images/qr-code.png">
+
+            <div class="image-caption">
+                Embedded QR Code
+            </div>
+
+        </div>
+
+        <div class="image-card">
+
+            <img src="images/digitalrecord.png">
+
+            <div class="image-caption">
+                Digital Part Record System
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SIMULATION ================= -->
+
+<section class="section dark-section" id="simulation">
+
+    <div class="section-title">
+        Tecnomatix Plant Simulation
+    </div>
+
+    <div class="section-text">
+
+        Tecnomatix Plant Simulation was used
+        to analyse production throughput,
+        bottlenecks,
+        worker utilisation,
+        and annual production capability.
+
+        Simulation results showed that
+        3D printing was the system bottleneck,
+        while increasing workers had no effect
+        on throughput.
+
+    </div>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+
+            <img src="images/simulation.jpg">
+
+            <div class="image-caption">
+                Plant Simulation Model
+            </div>
+
+        </div>
+
+        <div class="image-card">
+
+            <img src="images/chart.jpg">
+
+            <div class="image-caption">
+                Bottleneck Analysis Output
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-MSc Robotics Engineering • Manchester Metropolitan University
+
+    MSc Robotics Engineering |
+    Manchester Metropolitan University
+
 </footer>
 
 <script src="script.js"></script>
