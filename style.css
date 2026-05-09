@@ -28,7 +28,7 @@ body{
     line-height:1.7;
 }
 
-/* ================= BACKGROUND EFFECT ================= */
+/* ================= BACKGROUND ================= */
 
 body::before{
     content:"";
@@ -59,8 +59,6 @@ nav{
 
     backdrop-filter:blur(16px);
 
-    border-bottom:1px solid rgba(255,255,255,0.2);
-
     z-index:1000;
 }
 
@@ -68,13 +66,12 @@ nav{
     font-size:1.4rem;
     font-weight:700;
     color:var(--teal);
-    letter-spacing:1px;
 }
 
 nav ul{
     display:flex;
-    list-style:none;
     gap:30px;
+    list-style:none;
 }
 
 nav a{
@@ -91,13 +88,11 @@ nav a:hover{
 /* ================= HERO ================= */
 
 .hero{
-    position:relative;
-
     height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("images/hero.png");
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1974&auto=format&fit=crop");
 
     background-size:cover;
     background-position:center;
@@ -108,24 +103,20 @@ nav a:hover{
 
     text-align:center;
 
-    overflow:hidden;
+    position:relative;
 }
 
 .hero::before{
     content:"";
+
     position:absolute;
+
     width:700px;
     height:700px;
 
-    background:radial-gradient(circle, rgba(0,180,166,0.2), transparent 70%);
+    background:radial-gradient(circle, rgba(0,180,166,0.18), transparent 70%);
 
     animation:pulse 6s infinite ease-in-out;
-}
-
-@keyframes pulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.2);}
-    100%{transform:scale(1);}
 }
 
 .hero-content{
@@ -146,8 +137,6 @@ nav a:hover{
     color:white;
 
     margin-bottom:25px;
-
-    letter-spacing:-2px;
 }
 
 .hero p{
@@ -184,7 +173,6 @@ nav a:hover{
 
 .section{
     padding:140px 10%;
-    position:relative;
 }
 
 .dark-section{
@@ -197,8 +185,6 @@ nav a:hover{
     font-weight:700;
 
     margin-bottom:30px;
-
-    position:relative;
 }
 
 .section-title::after{
@@ -212,8 +198,6 @@ nav a:hover{
     display:block;
 
     margin-top:15px;
-
-    border-radius:10px;
 }
 
 .section-text{
@@ -250,17 +234,13 @@ nav a:hover{
 
     transition:0.5s;
 
-    transform:translateY(50px);
     opacity:0;
-}
-
-.dark-section .image-card{
-    background:#162033;
+    transform:translateY(50px);
 }
 
 .image-card.show{
-    transform:translateY(0);
     opacity:1;
+    transform:translateY(0);
 }
 
 .image-card:hover{
@@ -283,16 +263,10 @@ nav a:hover{
 .image-caption{
     padding:20px;
 
-    font-size:0.95rem;
-
     color:#64748b;
 }
 
-.dark-section .image-caption{
-    color:#cbd5e1;
-}
-
-/* ================= STATS SECTION ================= */
+/* ================= STATS ================= */
 
 .stats{
     display:grid;
@@ -326,6 +300,7 @@ nav a:hover{
 .stat-number{
     font-size:3rem;
     font-weight:800;
+
     color:var(--teal);
 
     margin-bottom:10px;
@@ -349,6 +324,12 @@ footer{
 }
 
 /* ================= ANIMATION ================= */
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
 
 @keyframes fadeUp{
     from{
