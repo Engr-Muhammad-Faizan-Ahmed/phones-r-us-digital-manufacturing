@@ -84,7 +84,7 @@ nav ul li a:hover {
     position: relative;
 
     /* 🔥 HERO BACKGROUND IMAGE LAYER */
-    background: url("images/hero.jpg") center/cover no-repeat;
+    background: url("images/hero.png") center/cover no-repeat;
 
     /* fallback overlay gradient */
 }
