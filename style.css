@@ -1,171 +1,393 @@
-/* ==========================================
-   INDUSTRY 4.0 PORTFOLIO — ANIMATED UPGRADE
-   Scroll Reveal + Electrifying Aesthetic UI
-========================================== */
-
-:root {
-    --navy: #1B2A4A;
-    --teal: #00B4A6;
-    --dark: #0B1220;
-    --light: #FFFFFF;
-    --gray: #6B7280;
-    --soft: #F5F7FA;
-
-    --shadow: 0 12px 30px rgba(0,0,0,0.12);
-    --glow: 0 0 25px rgba(0,180,166,0.35);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* ================= BASE ================= */
+:root{
+    --navy:#081120;
+    --dark:#0f172a;
+    --teal:#00B4A6;
+    --light:#ffffff;
+    --soft:#f4f7fb;
+    --gray:#94a3b8;
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: var(--light);
-    overflow-x: hidden;
+    --shadow:0 10px 40px rgba(0,0,0,0.12);
+    --glow:0 0 30px rgba(0,180,166,0.25);
 }
 
-/* ================= ELECTRIFYING BACKGROUND ================= */
+html{
+    scroll-behavior:smooth;
+}
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:var(--light);
+    color:var(--navy);
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* ================= BACKGROUND EFFECT ================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
     background:
-        radial-gradient(circle at 20% 20%, rgba(0,180,166,0.10), transparent 40%),
-        radial-gradient(circle at 80% 30%, rgba(27,42,74,0.12), transparent 45%),
-        radial-gradient(circle at 50% 80%, rgba(0,180,166,0.08), transparent 50%);
-    animation: backgroundFlow 12s infinite alternate ease-in-out;
-    z-index: -1;
+    radial-gradient(circle at 20% 20%, rgba(0,180,166,0.08), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0,180,166,0.06), transparent 45%);
+
+    z-index:-1;
 }
 
-@keyframes backgroundFlow {
-    0% { transform: scale(1) rotate(0deg); }
-    100% { transform: scale(1.1) rotate(2deg); }
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:22px 8%;
+
+    background:rgba(255,255,255,0.75);
+
+    backdrop-filter:blur(16px);
+
+    border-bottom:1px solid rgba(255,255,255,0.2);
+
+    z-index:1000;
 }
 
-/* ================= HERO GLOW ================= */
-
-.hero {
-    position: relative;
-    overflow: hidden;
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    color:var(--teal);
+    letter-spacing:1px;
 }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at center, rgba(0,180,166,0.18), transparent 60%);
-    animation: pulseGlow 6s infinite ease-in-out;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-@keyframes pulseGlow {
-    0%, 100% { opacity: 0.6; }
-    50% { opacity: 1; }
+nav a{
+    text-decoration:none;
+    color:var(--navy);
+    font-weight:600;
+    transition:0.3s;
 }
 
-/* ================= SCROLL REVEAL SYSTEM ================= */
-
-.section,
-.image-card,
-.card {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
+nav a:hover{
+    color:var(--teal);
 }
 
-.show {
-    opacity: 1;
-    transform: translateY(0);
+/* ================= HERO ================= */
+
+.hero{
+    position:relative;
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("images/hero.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
 }
 
-/* ================= IMAGE CARDS ================= */
+.hero::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
 
-.image-card {
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: all 0.4s ease;
-    position: relative;
+    background:radial-gradient(circle, rgba(0,180,166,0.2), transparent 70%);
+
+    animation:pulse 6s infinite ease-in-out;
 }
 
-.image-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: var(--glow);
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
 }
 
-.image-card img {
-    width: 100%;
-    display: block;
-    transition: transform 0.6s ease;
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    max-width:950px;
+
+    padding:20px;
+
+    animation:fadeUp 1.2s ease;
 }
 
-.image-card:hover img {
-    transform: scale(1.1);
+.hero h1{
+    font-size:5.5rem;
+    line-height:1.05;
+
+    color:white;
+
+    margin-bottom:25px;
+
+    letter-spacing:-2px;
 }
 
-/* ================= BUTTON GLOW ================= */
+.hero p{
+    font-size:1.3rem;
+    color:rgba(255,255,255,0.82);
 
-.hero-btn {
-    position: relative;
-    overflow: hidden;
+    margin-bottom:40px;
 }
 
-.hero-btn::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.2);
-    transform: translateX(-100%);
-    transition: 0.5s;
+.hero-btn{
+    display:inline-block;
+
+    padding:16px 40px;
+
+    background:var(--teal);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:0.4s;
 }
 
-.hero-btn:hover::after {
-    transform: translateX(0);
+.hero-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--glow);
 }
 
-.hero-btn:hover {
-    box-shadow: var(--glow);
+/* ================= SECTION ================= */
+
+.section{
+    padding:140px 10%;
+    position:relative;
 }
 
-/* ================= NAV GLOW ================= */
-
-nav {
-    backdrop-filter: blur(15px);
+.dark-section{
+    background:var(--dark);
+    color:white;
 }
 
-nav ul li a:hover {
-    text-shadow: 0 0 10px rgba(0,180,166,0.6);
+.section-title{
+    font-size:3rem;
+    font-weight:700;
+
+    margin-bottom:30px;
+
+    position:relative;
 }
 
-/* ================= TIMELINE ANIMATION ================= */
+.section-title::after{
+    content:"";
 
-.timeline-item {
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: all 0.8s ease;
+    width:80px;
+    height:4px;
+
+    background:var(--teal);
+
+    display:block;
+
+    margin-top:15px;
+
+    border-radius:10px;
 }
 
-.timeline-item.show {
-    opacity: 1;
-    transform: translateX(0);
+.section-text{
+    font-size:1.1rem;
+    max-width:950px;
+
+    color:#64748b;
 }
 
-/* ================= FLOATING ENERGY EFFECT ================= */
-
-@keyframes floatUp {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-8px); }
-    100% { transform: translateY(0px); }
+.dark-section .section-text{
+    color:#cbd5e1;
 }
 
-.image-card:hover {
-    animation: floatUp 3s infinite ease-in-out;
+/* ================= IMAGE GRID ================= */
+
+.image-grid{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:28px;
+
+    margin-top:60px;
+}
+
+.image-card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:0.5s;
+
+    transform:translateY(50px);
+    opacity:0;
+}
+
+.dark-section .image-card{
+    background:#162033;
+}
+
+.image-card.show{
+    transform:translateY(0);
+    opacity:1;
+}
+
+.image-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--glow);
+}
+
+.image-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+
+    transition:0.6s;
+}
+
+.image-card:hover img{
+    transform:scale(1.08);
+}
+
+.image-caption{
+    padding:20px;
+
+    font-size:0.95rem;
+
+    color:#64748b;
+}
+
+.dark-section .image-caption{
+    color:#cbd5e1;
+}
+
+/* ================= STATS SECTION ================= */
+
+.stats{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:70px;
+}
+
+.stat-box{
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:0.4s;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--glow);
+}
+
+.stat-number{
+    font-size:3rem;
+    font-weight:800;
+    color:var(--teal);
+
+    margin-bottom:10px;
+}
+
+.stat-label{
+    color:#64748b;
+    font-weight:600;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    padding:60px;
+
+    text-align:center;
+
+    background:#020617;
+
+    color:white;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 768px) {
-    body::before {
-        animation: none;
+@media(max-width:768px){
+
+    nav{
+        padding:18px 5%;
+    }
+
+    nav ul{
+        gap:15px;
+        font-size:0.9rem;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .section{
+        padding:100px 7%;
+    }
+
+    .section-title{
+        font-size:2.2rem;
     }
 }
