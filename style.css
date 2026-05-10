@@ -1100,24 +1100,9 @@ footer {
     grid-column: 2;
 }
 
-/* reverse layout: image left, text right */
-.split-card.reverse .split-left {
-    order: 2;
-    justify-content: flex-start;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.split-card.reverse .split-right {
-    order: 1;
-}
-
 /* responsive fix */
 @media (max-width: 950px) {
     .split-card,
-    .split-card.reverse {
-        grid-template-columns: 1fr;
-    }
 
     .split-card .split-left,
     .split-card .split-right {
