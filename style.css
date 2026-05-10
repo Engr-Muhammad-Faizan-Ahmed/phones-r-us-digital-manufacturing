@@ -1402,21 +1402,16 @@ footer {
 
 /* RIGHT */
 
-.split-images {
-
-    display: grid;
-
-    grid-template-rows: 1fr 1fr;
-
+.split-image-single {
     height: 100%;
+    overflow: hidden;
 }
 
-.split-images img {
-
+.split-image-single img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
+    display: block;
 }
 
 /* MOBILE */
