@@ -66,65 +66,50 @@
 
     <div class="timeline">
 
-        <!-- WEEK 1 -->
+        <!-- WEEK 1 (TEXT LEFT, IMAGE RIGHT) -->
         <div class="timeline-content split-card">
 
-            <!-- LEFT SIDE -->
-        
             <div class="split-left">
-        
                 <span class="week-tag">Week 1</span>
-        
                 <h3>PrintCity Induction & First Print</h3>
-        
+
                 <p>
                     The project began with mandatory printer induction at PrintCity led by Gary Buller.
                     The session introduced machine operation, material handling,
                     QR scan-before-printing workflow, and additive manufacturing practices.
                 </p>
-        
+
                 <p>
                     The very next day, the first bottom case was printed in black PLA.
                     Although the geometry was acceptable, the dark material made
                     edges, surface quality and dimensional details difficult to inspect.
                     White PLA was later adopted for all future iterations.
                 </p>
-        
-                <p>
-                    The first prototype validated the overall geometry
-                    but exposed visibility and inspection limitations
-                    caused by black PLA material.
-                </p>
-        
+
                 <ul>
                     <li>Initial dimensional validation</li>
                     <li>Black PLA inspection issue</li>
                     <li>Beginning of iterative workflow</li>
                 </ul>
-        
             </div>
-        
-            <!-- RIGHT SIDE -->
-        
+
             <div class="split-right">
-        
                 <img src="images/print1.jpeg">
-        
-                <div class="caption">
-                    Figure 1 — First black PLA bottom case printed during Week 1.
-                </div>
-        
+                <div class="caption">Figure 1 — First black PLA bottom case printed during Week 1.</div>
             </div>
-        
+
         </div>
 
-        <!-- WEEK 2 -->
-        <div class="timeline-item">
+        <!-- WEEK 2 (IMAGE LEFT, TEXT RIGHT) -->
+        <div class="timeline-content split-card reverse">
 
-            <div class="timeline-content">
+            <div class="split-left">
+                <img src="images/cad1.png">
+                <div class="caption">Figure 2 — Fusion 360 CAD modelling and geometry development.</div>
+            </div>
 
+            <div class="split-right">
                 <span class="week-tag">Week 2</span>
-
                 <h3>Fusion 360 CAD Development</h3>
 
                 <p>
@@ -137,91 +122,62 @@
                     Initial versions intentionally excluded the snap-fit mechanism to validate
                     the primary geometry before introducing tolerance-sensitive features.
                 </p>
-
-                <div class="timeline-image">
-                    <img src="images/cad1.png">
-                    <div class="caption">
-                        Figure 2 — Fusion 360 CAD modelling and geometry development.
-                    </div>
-                </div>
-
             </div>
 
         </div>
 
-        <!-- WEEKS 3-5 -->
-        <div class="timeline-item">
+        <!-- WEEK 3-5 (TEXT LEFT, IMAGE RIGHT) -->
+        <div class="timeline-content split-card">
 
-            <div class="timeline-content">
-
+            <div class="split-left">
                 <span class="week-tag">Weeks 3–5</span>
-
                 <h3>Parameter Optimisation & Print Iterations</h3>
 
                 <p>
                     More than 50 print iterations were produced across Ultimaker S3,
                     Ultimaker S5 and Bambu Lab P1S printers.
                     Parameters including infill density, layer resolution,
-                    print speed, support generation and brim width were continuously adjusted.
+                    print speed and support structures were continuously adjusted.
                 </p>
+            </div>
 
-                <p>
-                    One major challenge was inconsistent printer behaviour.
-                    The same machine using identical parameters could produce different snap-fit results.
-                    Some iterations were too tight, others too loose,
-                    while a small number achieved the desired audible snapping engagement.
-                </p>
-
-                <div class="timeline-image">
-                    <img src="images/printer.png">
-                    <div class="caption">
-                        Figure 3 — Ultimaker S5 production setup at PrintCity.
-                    </div>
-                </div>
-
+            <div class="split-right">
+                <img src="images/printer.png">
+                <div class="caption">Figure 3 — Ultimaker S5 production setup at PrintCity.</div>
             </div>
 
         </div>
 
-        <!-- WEEKS 6-7 -->
-        <div class="timeline-item">
+        <!-- WEEK 6-7 (IMAGE LEFT, TEXT RIGHT) -->
+        <div class="timeline-content split-card reverse">
 
-            <div class="timeline-content">
+            <div class="split-left">
+                <img src="images/qr-code.png">
+                <div class="caption">Figure 4 — Embedded QR code used for digital traceability.</div>
+            </div>
 
+            <div class="split-right">
                 <span class="week-tag">Weeks 6–7</span>
-
                 <h3>QR Code Traceability & Digital Twin</h3>
 
                 <p>
                     A QR code traceability system was embedded directly into the top case
-                    using dual extrusion printing with white PLA for the body and black PLA
-                    for the QR geometry and support structures.
+                    using dual extrusion printing.
                 </p>
 
                 <p>
                     The QR code linked directly to a digital manufacturing record PDF,
-                    creating a component-level digital twin system integrating physical
-                    and digital manufacturing data.
+                    creating a component-level digital twin system.
                 </p>
-
-                <div class="timeline-image">
-                    <img src="images/qr-code.png">
-                    <div class="caption">
-                        Figure 4 — Embedded QR code used for digital traceability.
-                    </div>
-                </div>
-
             </div>
 
         </div>
 
-        <!-- WEEK 8 -->
-        <div class="timeline-item">
+        <!-- WEEK 8 (TEXT LEFT, IMAGE RIGHT) -->
+        <div class="timeline-content split-card">
 
-            <div class="timeline-content">
-
+            <div class="split-left">
                 <span class="week-tag">Week 8</span>
-
                 <h3>FESTO CP Lab Validation</h3>
 
                 <p>
@@ -229,65 +185,31 @@
                     The measuring station validated dimensional accuracy,
                     while the muscle press station verified snap-fit assembly behaviour.
                 </p>
+            </div>
 
-                <p>
-                    Some parts successfully passed measuring but failed during pressing
-                    due to excessive snap-fit tightness. Iterative tolerance adjustments
-                    were required before achieving stable assembly performance.
-                </p>
-
-                <div class="timeline-image">
-                    <img src="images/festo.jpeg">
-                    <div class="caption">
-                        Figure 5 — FESTO CP Lab automated assembly validation.
-                    </div>
-                </div>
-
+            <div class="split-right">
+                <img src="images/festo.jpeg">
+                <div class="caption">Figure 5 — FESTO CP Lab automated assembly validation.</div>
             </div>
 
         </div>
 
-        <!-- WEEK 9 -->
-        <div class="timeline-item">
+        <!-- WEEK 9 (IMAGE LEFT, TEXT RIGHT) -->
+        <div class="timeline-content split-card reverse">
 
-            <div class="timeline-content">
+            <div class="split-left">
+                <img src="images/finalpart.jpg">
+                <div class="caption">Figure 6 — Final validated phone case assembly.</div>
+            </div>
 
+            <div class="split-right">
                 <span class="week-tag">Week 9</span>
-
                 <h3>Final Recovery & Submission</h3>
 
                 <p>
-                    Shortly before submission, multiple bags containing nearly all physical
-                    print iterations were accidentally lost during travel.
-                    With only two days remaining, the final production parts were rebuilt
-                    using the accumulated process knowledge developed throughout the project.
+                    Multiple physical iterations were lost before submission.
+                    Final parts were rebuilt using accumulated engineering knowledge.
                 </p>
-
-                <p>
-                    The final versions successfully passed FESTO validation,
-                    snapped correctly to the master parts,
-                    and achieved reliable assembly behaviour.
-                </p>
-
-                <div class="timeline-image">
-                    <div class="image-row">
-                        <div class="mini-image">
-                            <img src="images/print2.jpg">
-                            <span>White PLA iterations for dimensional inspection</span>
-                        </div>
-                    
-                        <div class="mini-image">
-                            <img src="images/printer.png">
-                            <span>Ultimaker S5 production workflow</span>
-                        </div>
-                    </div>
-                    
-                    <img src="images/finalpart.jpg">
-                    <div class="caption">
-                        Figure 6 — Final validated phone case assembly.
-                    </div>
-                </div>
-
             </div>
 
         </div>
