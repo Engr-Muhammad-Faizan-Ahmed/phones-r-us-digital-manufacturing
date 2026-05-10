@@ -90,24 +90,11 @@ nav a:hover {
 /* ================= HERO ================= */
 
 .hero {
-
     height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(5,6,10,0.82),
-            rgba(5,6,10,0.92)
-        ),
-        url("images/festo.jpeg");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .hero-content {
@@ -158,7 +145,6 @@ nav a:hover {
 
 .section {
     padding: 120px 10%;
-    border-top: 1px solid rgba(255,255,255,0.04);
 }
 
 .dark {
@@ -1040,111 +1026,4 @@ footer {
     color: #cbd5e1;
 
     line-height: 1.9;
-}
-
-/* ==========================================
-   SCROLL REVEAL ANIMATION
-========================================== */
-
-.section,
-.timeline-item,
-.stat-card,
-.tech-card,
-.challenge-card,
-.flow-card,
-.analytics-card,
-.insight-card {
-
-    opacity: 0;
-    transform: translateY(40px);
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
-}
-
-.section.show,
-.timeline-item.show,
-.stat-card.show,
-.tech-card.show,
-.challenge-card.show,
-.flow-card.show,
-.analytics-card.show,
-.insight-card.show {
-
-    opacity: 1;
-    transform: translateY(0);
-}
-
-nav a.active {
-
-    color: var(--cyan);
-
-    text-shadow:
-        0 0 12px var(--cyan);
-
-    border-bottom:
-        2px solid var(--cyan);
-
-    padding-bottom: 4px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 768px) {
-
-    nav {
-
-        padding: 18px 20px;
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    nav ul {
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        padding: 0;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .title {
-        font-size: 34px;
-    }
-
-}
-
-.timeline-image img:hover {
-
-    transform: scale(1.02);
-
-    box-shadow:
-        0 0 35px rgba(0,245,255,0.18);
-}
-
-::selection {
-
-    background: var(--cyan);
-    color: black;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #05060a;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(0,245,255,0.3);
-    border-radius: 20px;
 }
