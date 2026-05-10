@@ -87,3 +87,44 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+/* ================= COUNTER ANIMATION ================= */
+
+const counters =
+    document.querySelectorAll(".stat-number, .kpi-value");
+
+counters.forEach(counter => {
+
+    const updateCounter = () => {
+
+        const target =
+            +counter.innerText.replace(/,/g,'');
+
+        const count =
+            +counter.getAttribute("data-count") || 0;
+
+        const increment =
+            target / 80;
+
+        if(count < target){
+
+            const newCount =
+                Math.ceil(count + increment);
+
+            counter.setAttribute(
+                "data-count",
+                newCount
+            );
+
+            counter.innerText =
+                newCount.toLocaleString();
+
+            setTimeout(updateCounter,20);
+
+        }
+
+    };
+
+    updateCounter();
+
+});
