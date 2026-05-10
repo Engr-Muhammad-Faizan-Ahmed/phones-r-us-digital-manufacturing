@@ -608,3 +608,140 @@ footer {
     }
 
 }
+
+/* ==========================================
+   FESTO FLOW SYSTEM
+========================================== */
+
+.flow-system {
+
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    overflow-x: auto;
+
+    padding-bottom: 20px;
+}
+
+/* custom scroll */
+
+.flow-system::-webkit-scrollbar {
+    height: 8px;
+}
+
+.flow-system::-webkit-scrollbar-thumb {
+    background: rgba(0,245,255,0.25);
+    border-radius: 20px;
+}
+
+/* station card */
+
+.flow-card {
+
+    min-width: 300px;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(0,245,255,0.10);
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.flow-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(0,245,255,0.08),
+        transparent 60%);
+}
+
+.flow-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 35px rgba(0,245,255,0.15);
+}
+
+/* station number */
+
+.flow-icon {
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(0,245,255,0.20);
+
+    color: var(--cyan);
+
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 0 25px rgba(0,245,255,0.15);
+}
+
+.flow-card h3 {
+
+    color: var(--cyan);
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+}
+
+.flow-card p {
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+}
+
+/* arrows */
+
+.flow-arrow {
+
+    font-size: 34px;
+
+    color: var(--cyan);
+
+    text-shadow:
+        0 0 15px rgba(0,245,255,0.5);
+
+    flex-shrink: 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .flow-card {
+        min-width: 260px;
+    }
+
+}
