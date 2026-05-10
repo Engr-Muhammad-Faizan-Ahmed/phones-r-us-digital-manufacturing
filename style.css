@@ -1101,3 +1101,101 @@ footer {
     }
 
 }
+
+/* ==========================================
+   ADOBE STYLE SPLIT LAYOUT
+========================================== */
+
+.split-card {
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.9fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+/* LEFT */
+
+.split-left h3 {
+
+    margin-top: 10px;
+}
+
+.split-left p {
+
+    color: #cbd5e1;
+
+    line-height: 1.9;
+
+    margin-bottom: 22px;
+}
+
+.split-left ul {
+
+    padding-left: 20px;
+
+    margin-top: 25px;
+}
+
+.split-left li {
+
+    color: #94a3b8;
+
+    margin-bottom: 12px;
+
+    line-height: 1.7;
+}
+
+/* RIGHT */
+
+.split-right {
+
+    position: relative;
+}
+
+.split-right img {
+
+    width: 100%;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(0,245,255,0.12);
+
+    transition: 0.4s;
+
+    box-shadow:
+        0 0 40px rgba(0,245,255,0.08);
+}
+
+.split-right img:hover {
+
+    transform: scale(1.02);
+
+    box-shadow:
+        0 0 45px rgba(0,245,255,0.18);
+}
+
+/* CAPTION */
+
+.split-right .caption {
+
+    margin-top: 14px;
+
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .split-card {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
