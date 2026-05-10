@@ -1199,3 +1199,15 @@ footer {
     }
 
 }
+
+/* ==========================================
+   SPLIT LAYOUT ALTERNATING FIX
+========================================== */
+
+.split-card.reverse .split-left {
+    order: 2;
+}
+
+.split-card.reverse .split-right {
+    order: 1;
+}
