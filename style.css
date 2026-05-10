@@ -1027,3 +1027,36 @@ footer {
 
     line-height: 1.9;
 }
+
+/* ==========================================
+   SCROLL REVEAL ANIMATION
+========================================== */
+
+.section,
+.timeline-item,
+.stat-card,
+.tech-card,
+.challenge-card,
+.flow-card,
+.analytics-card,
+.insight-card {
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.section.show,
+.timeline-item.show,
+.stat-card.show,
+.tech-card.show,
+.challenge-card.show,
+.flow-card.show,
+.analytics-card.show,
+.insight-card.show {
+
+    opacity: 1;
+    transform: translateY(0);
+}
