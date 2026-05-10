@@ -1428,3 +1428,30 @@ footer {
         height: 600px;
     }
 }
+
+/* ==========================================
+   VIDEO SECTION
+========================================== */
+
+.video-container {
+
+    margin-top: 50px;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0,245,255,0.15);
+
+    box-shadow:
+        0 0 40px rgba(0,245,255,0.10);
+
+    background: rgba(255,255,255,0.03);
+}
+
+.video-container video {
+
+    width: 100%;
+
+    display: block;
+}
