@@ -1,76 +1,89 @@
 * {
-/* FOOTER */
-footer {
-    background: #081b38;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+    color: #111;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.dark-section {
+    background: linear-gradient(135deg, #081b38, #0f2c5c);
     color: white;
+}
+
+.section-title {
     text-align: center;
-    padding: 60px 20px;
+    margin-bottom: 60px;
 }
 
-.footer-content h2 {
-    margin-bottom: 20px;
+.section-title h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.light h2 {
+    color: white;
+}
+
+.underline {
+    width: 100px;
+    height: 5px;
+    background: #00d2c6;
+    margin: auto;
+    border-radius: 50px;
+}
+
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('images/factory.png') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero-content h2 {
     font-size: 2rem;
-}
-
-.footer-content p {
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
-
-
-/* RESPONSIVE */
-@media(max-width: 1100px) {
-
-    .cad-grid,
-    .gallery-grid,
-    .future-grid,
-    .trace-grid,
-    .validation-grid,
-    .overview-grid,
-    .printing-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-content h1 {
-        font-size: 3.5rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1.5rem;
-    }
-
-}
-
-@media(max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .section-title h2 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .card,
-    .future-card,
-    .validation-text,
-    .printing-text,
-    .overview-text,
-    .pfmea-text {
-        padding: 25px;
-    }
 }
