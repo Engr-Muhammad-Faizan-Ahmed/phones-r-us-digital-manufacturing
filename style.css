@@ -1329,27 +1329,99 @@ footer {
 }
 
 /* ==========================================
-   SPLIT INDUSTRIAL LAYOUT
+   FUTURISTIC SPLIT SHOWCASE
 ========================================== */
 
 .split-showcase {
 
+    position: relative;
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.05fr;
 
     min-height: 100vh;
 
-    background: #f5f5f5;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(5,10,20,0.98),
+            rgba(10,15,30,0.96)
+        );
 }
 
-/* LEFT */
+/* animated cyber glow */
+
+.split-showcase::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    top: -250px;
+    left: -200px;
+
+    background:
+        radial-gradient(circle,
+        rgba(0,245,255,0.12),
+        transparent 70%);
+
+    animation: pulseGlow 8s ease-in-out infinite;
+
+    z-index: 0;
+}
+
+.split-showcase::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(rgba(0,245,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,245,255,0.03) 1px, transparent 1px);
+
+    background-size: 60px 60px;
+
+    opacity: 0.35;
+
+    z-index: 0;
+}
+
+@keyframes pulseGlow {
+
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+/* LEFT SIDE */
 
 .split-info {
 
-    padding: 120px 90px;
+    position: relative;
 
-    background: #f2f2f2;
+    z-index: 2;
+
+    padding: 120px 90px;
 
     display: flex;
 
@@ -1357,68 +1429,257 @@ footer {
 
     justify-content: center;
 
-    gap: 80px;
+    gap: 45px;
 }
+
+/* comparison cards */
+
+.info-block {
+
+    position: relative;
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.05),
+            rgba(255,255,255,0.02)
+        );
+
+    border: 1px solid rgba(0,245,255,0.10);
+
+    backdrop-filter: blur(14px);
+
+    overflow: hidden;
+
+    transition: 0.45s;
+}
+
+.info-block::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(0,245,255,0.10),
+        transparent 60%);
+}
+
+.info-block:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 40px rgba(0,245,255,0.12);
+}
+
+/* heading */
 
 .info-block h2 {
 
-    color: #111;
+    color: var(--cyan);
 
-    font-size: 42px;
+    font-size: 38px;
 
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+
+    text-shadow:
+        0 0 15px rgba(0,245,255,0.3);
 }
+
+/* bullet list */
 
 .info-block ul {
 
-    padding-left: 25px;
+    padding-left: 0;
+
+    list-style: none;
 }
 
 .info-block li {
 
-    color: #444;
+    position: relative;
 
-    font-size: 20px;
+    padding-left: 35px;
 
     margin-bottom: 18px;
 
-    line-height: 1.7;
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    line-height: 1.8;
 }
 
-/* RIGHT */
+/* glowing bullet */
+
+.info-block li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 12px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: var(--cyan);
+
+    box-shadow:
+        0 0 15px rgba(0,245,255,0.8);
+}
+
+/* RIGHT SIDE */
 
 .split-image-single {
-    height: 100%;
+
+    position: relative;
+
+    z-index: 2;
+
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
 }
+
+/* futuristic frame */
+
+.split-image-single::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 80px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(0,245,255,0.15);
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+/* image */
 
 .split-image-single img {
+
     width: 100%;
-    height: 100%;
+
+    max-height: 85vh;
+
     object-fit: cover;
-    display: block;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(0,245,255,0.18);
+
+    box-shadow:
+        0 0 60px rgba(0,245,255,0.12);
+
+    transition: 0.5s;
 }
 
-/* MOBILE */
+.split-image-single:hover img {
 
-@media (max-width: 900px) {
+    transform: scale(1.03);
+}
+
+/* floating tech labels */
+
+.split-image-single::after {
+
+    content: "SMART MANUFACTURING";
+
+    position: absolute;
+
+    bottom: 90px;
+    right: 90px;
+
+    padding: 14px 22px;
+
+    border-radius: 40px;
+
+    background: rgba(5,10,20,0.75);
+
+    border: 1px solid rgba(0,245,255,0.18);
+
+    backdrop-filter: blur(12px);
+
+    color: var(--cyan);
+
+    letter-spacing: 2px;
+
+    font-size: 12px;
+
+    box-shadow:
+        0 0 25px rgba(0,245,255,0.12);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
     .split-showcase {
+
         grid-template-columns: 1fr;
     }
+
     .split-info {
-        padding: 70px 35px;
+
+        padding: 80px 35px;
     }
-    .info-block h2 {
-        font-size: 32px;
+
+    .split-image-single {
+
+        padding: 35px;
     }
-    .info-block li {
-       font-size: 18px;
-    }
-    .split-images {
-        height: 600px;
+
+    .split-image-single::after {
+
+        right: 45px;
+        bottom: 45px;
     }
 }
 
+@media (max-width: 768px) {
+
+    .info-block {
+
+        padding: 30px;
+    }
+
+    .info-block h2 {
+
+        font-size: 28px;
+    }
+
+    .info-block li {
+
+        font-size: 16px;
+    }
+
+    .split-image-single::after {
+
+        display: none;
+    }
+}
 /* ==========================================
    VIDEO SECTION
 ========================================== */
