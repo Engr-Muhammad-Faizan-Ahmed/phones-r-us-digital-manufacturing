@@ -1437,3 +1437,46 @@ footer {
     border: 1px solid rgba(0,245,255,0.15);
     box-shadow: 0 0 40px rgba(0,245,255,0.12);
 }
+
+/* ==========================================
+   VIDEO SPLIT SECTION
+========================================== */
+.video-split {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* LEFT SIDE */
+.video-text .text {
+    max-width: 100%;
+}
+
+/* RIGHT SIDE */
+.video-frame {
+    display: flex;
+    justify-content: center;
+}
+
+.video-frame video {
+    height: 750px;
+    width: auto;
+    border-radius: 28px;
+    border: 1px solid rgba(0,245,255,0.15);
+    box-shadow:
+        0 0 40px rgba(0,245,255,0.12);
+}
+
+/* MOBILE */
+@media (max-width: 1000px) {
+    .video-split {
+        grid-template-columns: 1fr;
+    }
+
+    .video-frame video {
+        width: 100%;
+        height: auto;
+    }
+}
