@@ -1,16 +1,17 @@
-# index.html
-
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phones-R-Us | Smart Manufacturing</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- ================= NAV ================= -->
 <nav>
     <div class="logo">Phones-R-Us</div>
 
@@ -22,17 +23,25 @@
     </ul>
 </nav>
 
+<!-- ================= HERO ================= -->
+<!-- ================= HERO ================= -->
+
 <section class="hero">
 
+    <!-- background image -->
     <div class="hero-overlay"></div>
 
+    <!-- floating navbar -->
     <div class="floating-nav">
+
         <a href="#overview">Overview</a>
         <a href="#journey">Journey</a>
         <a href="#festo">FESTO</a>
         <a href="#simulation">Simulation</a>
+
     </div>
 
+    <!-- hero content -->
     <div class="hero-content">
 
         <div class="subtitle">
@@ -53,6 +62,7 @@
 
 </section>
 
+<!-- ================= OVERVIEW ================= -->
 <section class="section" id="overview">
 
     <h2 class="title">Project Overview</h2>
@@ -65,32 +75,11 @@
 
 </section>
 
-<section class="section dark">
-
-    <h2 class="title">Industry 4.0 Manufacturing Environment</h2>
-
-    <div class="image-row">
-
-        <div class="mini-image">
-            <img src="images/industry40.png">
-            <span>Industry 4.0 connected manufacturing workflow.</span>
-        </div>
-
-        <div class="mini-image">
-            <img src="images/smart-factory.png">
-            <span>Smart factory digital manufacturing concept.</span>
-        </div>
-
-        <div class="mini-image">
-            <img src="images/digital-record-sheet.png">
-            <span>Digital manufacturing traceability record.</span>
-        </div>
-
-    </div>
-
-</section>
+<!-- ================= SPLIT COMPARISON ================= -->
 
 <section class="split-showcase">
+
+    <!-- LEFT SIDE -->
 
     <div class="split-info">
 
@@ -122,11 +111,14 @@
 
     </div>
 
+    <!-- RIGHT SIDE -->
     <div class="split-image-single">
-        <img src="images/injection_moulding_3dprinting.jpg">
+        <img src="images/injection_moulding_3dprinting.png">
     </div>
 
 </section>
+
+<!-- ================= ENGINEERING JOURNEY ================= -->
 
 <section class="section" id="journey">
 
@@ -134,6 +126,7 @@
 
     <div class="timeline">
 
+        <!-- WEEK 1 (TEXT LEFT, IMAGE RIGHT) -->
         <div class="timeline-content split-card">
 
             <div class="split-left">
@@ -161,42 +154,44 @@
             </div>
 
             <div class="split-right">
-                <img src="images/render-main.png">
-                <div class="caption">Figure 1 — First bottom case print iteration.</div>
+                <img src="images/print1.jpeg">
+                <div class="caption">Figure 1 — First black PLA bottom case printed during Week 1.</div>
             </div>
 
         </div>
 
+        <!-- WEEK 2 -->
         <div class="timeline-content split-card">
-
+        
             <div class="split-left">
-
+        
                 <span class="week-tag">Week 2</span>
-
+        
                 <h3>Fusion 360 CAD Development</h3>
-
+        
                 <p>
                     The bottom case was designed quickly using the instructor-provided workflow.
                     However, the top case required interpreting engineering drawings independently
                     and reconstructing the geometry directly inside Fusion 360.
                 </p>
-
+        
                 <p>
                     Initial versions intentionally excluded the snap-fit mechanism to validate
                     the primary geometry before introducing tolerance-sensitive features.
                 </p>
-
+        
             </div>
-
+        
             <div class="split-right">
-                <img src="images/fusion 360.png">
+                <img src="images/cad1.png">
                 <div class="caption">
                     Figure 2 — Fusion 360 CAD modelling and geometry development.
                 </div>
             </div>
-
+        
         </div>
 
+        <!-- WEEK 3-5 (TEXT LEFT, IMAGE RIGHT) -->
         <div class="timeline-content split-card">
 
             <div class="split-left">
@@ -212,17 +207,18 @@
             </div>
 
             <div class="split-right">
-                <img src="images/Ultimaker-S5-3D-printer-1.png">
+                <img src="images/printer.png">
                 <div class="caption">Figure 3 — Ultimaker S5 production setup at PrintCity.</div>
             </div>
 
         </div>
 
+        <!-- WEEK 6-7 (IMAGE LEFT, TEXT RIGHT) -->
         <div class="timeline-content split-card">
             <div class="split-left">
                 <span class="week-tag">Weeks 6–7</span>
                 <h3>QR Code Traceability & Digital Twin</h3>
-
+        
                 <p>
                     A QR code traceability system was embedded directly into the top case
                     using dual extrusion printing.
@@ -233,15 +229,16 @@
                     creating a component-level digital twin system.
                 </p>
             </div>
-
+        
             <div class="split-right">
-                <img src="images/qr-code1.png">
+                <img src="images/qr-code.png">
                 <div class="caption">
                     Figure 4 — Embedded QR code used for digital traceability.
                 </div>
             </div>
         </div>
 
+        <!-- WEEK 8 (TEXT LEFT, IMAGE RIGHT) -->
         <div class="timeline-content split-card">
 
             <div class="split-left">
@@ -256,37 +253,263 @@
             </div>
 
             <div class="split-right">
-                <img src="images/measuring-station.png">
+                <img src="images/festo.jpeg">
                 <div class="caption">Figure 5 — FESTO CP Lab automated assembly validation.</div>
             </div>
 
         </div>
 
+        <!-- WEEK 9 (IMAGE LEFT, TEXT RIGHT) -->
         <div class="timeline-content split-card">
             <div class="split-left">
                 <span class="week-tag">Weeks 9</span>
                 <h3>Final Recovery & Submission</h3>
-
+                
                 <p>
                     Multiple physical iterations were lost before submission.
                     Final parts were rebuilt using accumulated engineering knowledge.
                 </p>
             </div>
-
+        
             <div class="split-right">
-                <img src="images/render-main.png">
-                <div class="caption">Figure 6 — Final validated Bottom case.</div>
-
-                <br>
-
-                <img src="images/render-top.png">
-                <div class="caption">Figure 7 — Final validated Top case.</div>
+                <img src="images/bottom-case.jpeg">
+                <div class="caption">Figure 6 — Final validated Bottom case. </div>
+                <img src="images/top-case.jpeg">
+                <div class="caption">Figure 7 — Final validated Top case. </div
             </div>
-
+            </div>
         </div>
     </div>
 
 </section>
+
+<!-- ================= INDUSTRIAL STATS ================= -->
+
+<section class="section" id="stats">
+
+    <h2 class="title">Manufacturing System Overview</h2>
+
+    <p class="text">
+        The project combined additive manufacturing, automated assembly validation,
+        QR-based traceability and digital production simulation into a connected
+        Industry 4.0 manufacturing workflow.
+    </p>
+
+    <!-- STATS GRID -->
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Print Iterations</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">52,160</div>
+            <div class="stat-label">Annual Simulated Output</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">6</div>
+            <div class="stat-label">FESTO CP Lab Stations</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">Quality Target</div>
+        </div>
+
+    </div>
+
+    <!-- TECHNOLOGY GRID -->
+
+    <div class="tech-grid">
+
+        <!-- CARD 1 -->
+
+        <div class="tech-card">
+
+            <h3>Ultimaker S5</h3>
+
+            <p>
+                Dual extrusion industrial FDM printer used for
+                final QR-enabled production parts and traceability integration.
+            </p>
+
+            <ul>
+                <li>Dual extrusion capability</li>
+                <li>High dimensional consistency</li>
+                <li>QR code colour separation</li>
+            </ul>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="tech-card">
+
+            <h3>Bambu Lab P1S</h3>
+
+            <p>
+                High-speed FDM printer used for rapid geometry validation
+                and early iteration testing.
+            </p>
+
+            <ul>
+                <li>~3 hour print cycle</li>
+                <li>Fast prototyping workflow</li>
+                <li>Single filament limitation</li>
+            </ul>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="tech-card">
+
+            <h3>FESTO CP Lab</h3>
+
+            <p>
+                Automated modular assembly system used for dimensional
+                validation and snap-fit testing.
+            </p>
+
+            <ul>
+                <li>Laser measuring station</li>
+                <li>Muscle press validation</li>
+                <li>Automated conveyor workflow</li>
+            </ul>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="tech-card">
+
+            <h3>Tecnomatix Simulation</h3>
+
+            <p>
+                Digital factory modelling platform used to analyse throughput,
+                bottlenecks and annual production capability.
+            </p>
+
+            <ul>
+                <li>Experiment Manager analysis</li>
+                <li>Resource utilisation tracking</li>
+                <li>Theory of Constraints validation</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ENGINEERING CHALLENGES ================= -->
+
+<section class="section dark" id="challenges">
+
+    <h2 class="title">Engineering Challenges & Process Failures</h2>
+
+    <p class="text">
+        The project involved continuous manufacturing failures,
+        dimensional inconsistencies and process limitations.
+        Each failed iteration contributed toward understanding
+        the relationship between geometry, tolerances,
+        material behaviour and automated assembly performance.
+    </p>
+
+    <div class="challenge-grid">
+
+        <!-- CARD 1 -->
+
+        <div class="challenge-card">
+
+            <h3>Dimensional Inconsistency</h3>
+
+            <p>
+                Identical print parameters often produced different
+                snap-fit behaviour. Some assemblies were excessively tight,
+                while others failed due to loose engagement.
+            </p>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="challenge-card">
+
+            <h3>Surface Finish Issues</h3>
+
+            <p>
+                Poor surface finish affected assembly quality and
+                visual inspection. Black PLA made edge definition
+                difficult to evaluate during early iterations.
+            </p>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="challenge-card">
+
+            <h3>Support Removal Problems</h3>
+
+            <p>
+                Some support structures bonded aggressively to the part,
+                damaging surfaces during removal and affecting
+                dimensional accuracy around critical snap-fit regions.
+            </p>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="challenge-card">
+
+            <h3>QR Code Manufacturing Constraints</h3>
+
+            <p>
+                Embedding a scannable QR code within limited geometry
+                introduced printing complexity, particularly for small
+                feature dimensions and dual-colour extrusion alignment.
+            </p>
+
+        </div>
+
+        <!-- CARD 5 -->
+
+        <div class="challenge-card">
+
+            <h3>Printer Behaviour Variation</h3>
+
+            <p>
+                Different printers demonstrated different strengths.
+                Some handled QR geometry effectively while struggling
+                with inclined surfaces and overhang regions.
+            </p>
+
+        </div>
+
+        <!-- CARD 6 -->
+
+        <div class="challenge-card">
+
+            <h3>Final Submission Recovery</h3>
+
+            <p>
+                Multiple bags containing physical iterations were lost
+                shortly before submission, requiring rapid rebuilding
+                of validated parts using previously gained process knowledge.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROCESS PARAMETERS ================= -->
 
 <section class="section" id="parameters">
 
@@ -300,11 +523,15 @@
 
     <div class="parameter-table">
 
+        <!-- HEADER -->
+
         <div class="table-row table-header">
             <div>Parameter</div>
             <div>Range / Setting</div>
             <div>Engineering Observation</div>
         </div>
+
+        <!-- ROW -->
 
         <div class="table-row">
             <div>Layer Resolution</div>
@@ -312,11 +539,15 @@
             <div>Fine profiles improved dimensional consistency and edge quality.</div>
         </div>
 
+        <!-- ROW -->
+
         <div class="table-row">
             <div>Infill Density</div>
             <div>10% → 40%</div>
             <div>Higher infill improved structural rigidity during muscle press testing.</div>
         </div>
+
+        <!-- ROW -->
 
         <div class="table-row">
             <div>Print Speed</div>
@@ -324,87 +555,486 @@
             <div>Higher speeds reduced quality around QR geometry and snap-fit edges.</div>
         </div>
 
-    </div>
+        <!-- ROW -->
 
-    <div class="image-row">
-
-        <div class="mini-image">
-            <img src="images/print-parameters.png">
-            <span>Ultimaker Cura print parameter optimisation.</span>
+        <div class="table-row">
+            <div>Support Structures</div>
+            <div>Enabled / Disabled</div>
+            <div>Support removal occasionally damaged surface finish and tolerances.</div>
         </div>
 
-        <div class="mini-image">
-            <img src="images/takt_time_full_real.png">
-            <span>Takt time and production balancing analysis.</span>
+        <!-- ROW -->
+
+        <div class="table-row">
+            <div>Ironing</div>
+            <div>Mostly Disabled</div>
+            <div>Produced unwanted surface layers affecting fit quality.</div>
+        </div>
+
+        <!-- ROW -->
+
+        <div class="table-row">
+            <div>Brim Width</div>
+            <div>10 → 30 mm</div>
+            <div>Large brim improved bed adhesion and reduced warping risk.</div>
+        </div>
+
+        <!-- ROW -->
+
+        <div class="table-row">
+            <div>Material</div>
+            <div>PLA</div>
+            <div>Required by project specification and used across all final iterations.</div>
         </div>
 
     </div>
 
 </section>
+
+<!-- ================= FESTO PROCESS FLOW ================= -->
 
 <section class="section dark" id="cpflow">
 
     <h2 class="title">FESTO CP Lab Production Workflow</h2>
 
+    <p class="text">
+        The FESTO CP Lab system was used to validate automated handling,
+        dimensional inspection and snap-fit assembly behaviour.
+        Although only the Measuring and Muscle Press stations directly
+        evaluated the manufactured parts, the complete modular system
+        represents a connected Industry 4.0 production environment.
+    </p>
+
     <div class="flow-system">
 
+        <!-- STATION -->
+
         <div class="flow-card">
-            <img src="images/pickByLight_station.png" class="flow-img">
+
             <div class="flow-icon">01</div>
+
             <h3>Magazine</h3>
+
+            <p>
+                Workpieces are automatically separated and transferred
+                onto pallets for downstream processing.
+            </p>
+
         </div>
+
+        <!-- ARROW -->
 
         <div class="flow-arrow">➜</div>
 
+        <!-- STATION -->
+
         <div class="flow-card">
-            <img src="images/measuring-station.png" class="flow-img">
+
             <div class="flow-icon">02</div>
+
             <h3>Measuring</h3>
+
+            <p>
+                Laser distance sensors validate critical dimensions
+                and identify tolerance deviations.
+            </p>
+
         </div>
+
+        <!-- ARROW -->
 
         <div class="flow-arrow">➜</div>
 
+        <!-- STATION -->
+
         <div class="flow-card">
-            <img src="images/pickByLight_station.png" class="flow-img">
+
             <div class="flow-icon">03</div>
+
             <h3>Pick-by-Light</h3>
+
+            <p>
+                Operator guidance system supporting
+                controlled manual assembly workflows.
+            </p>
+
         </div>
+
+        <!-- ARROW -->
 
         <div class="flow-arrow">➜</div>
 
+        <!-- STATION -->
+
         <div class="flow-card">
-            <img src="images/musclepress.png" class="flow-img">
+
             <div class="flow-icon">04</div>
+
             <h3>Muscle Press</h3>
+
+            <p>
+                Automated pressing station validating
+                snap-fit assembly behaviour and force response.
+            </p>
+
         </div>
+
+        <!-- ARROW -->
 
         <div class="flow-arrow">➜</div>
 
+        <!-- STATION -->
+
         <div class="flow-card">
-            <img src="images/heating-tunnel-station.png" class="flow-img">
+
             <div class="flow-icon">05</div>
+
             <h3>Tunnel Furnace</h3>
+
+            <p>
+                Controlled thermal station capable of
+                simulating process disturbances and heat treatment.
+            </p>
+
         </div>
+
+        <!-- ARROW -->
 
         <div class="flow-arrow">➜</div>
 
+        <!-- STATION -->
+
         <div class="flow-card">
-            <img src="images/workpiece-discharge-station.png" class="flow-img">
+
             <div class="flow-icon">06</div>
+
             <h3>Workpiece Discharge</h3>
+
+            <p>
+                Final handling and automated workpiece
+                removal using two-axis handling system.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+    
+<!-- ================= FESTO ================= -->
+<section class="section dark" id="festo">
+
+    <h2 class="title">FESTO CP Lab Validation</h2>
+
+    <p class="text">
+        Parts were tested through automated Measuring and Muscle Press stations.
+        Snap-fit geometry was the critical pass/fail factor.
+    </p>
+
+</section>
+
+<!-- ================= DIGITAL FACTORY DASHBOARD ================= -->
+
+<section class="section" id="dashboard">
+
+    <h2 class="title">Digital Factory Analytics Dashboard</h2>
+
+    <p class="text">
+        Tecnomatix Plant Simulation was used to analyse production throughput,
+        resource utilisation and manufacturing bottlenecks.
+        The simulation demonstrated that printer capacity,
+        rather than operator availability, was the primary system limitation.
+    </p>
+
+    <!-- KPI GRID -->
+
+    <div class="kpi-grid">
+
+        <!-- KPI -->
+
+        <div class="kpi-card">
+
+            <div class="kpi-value">52,160</div>
+
+            <div class="kpi-label">Annual Production Output</div>
+
+        </div>
+
+        <!-- KPI -->
+
+        <div class="kpi-card">
+
+            <div class="kpi-value">1</div>
+
+            <div class="kpi-label">Primary Bottleneck Resource</div>
+
+        </div>
+
+        <!-- KPI -->
+
+        <div class="kpi-card">
+
+            <div class="kpi-value">3D</div>
+
+            <div class="kpi-label">Printing Bottleneck Stage</div>
+
+        </div>
+
+        <!-- KPI -->
+
+        <div class="kpi-card">
+
+            <div class="kpi-value">95%</div>
+
+            <div class="kpi-label">Target Manufacturing Quality</div>
+
+        </div>
+
+    </div>
+
+    <!-- ANALYTICS PANELS -->
+
+    <div class="analytics-grid">
+
+        <!-- PANEL -->
+
+        <div class="analytics-card">
+
+            <h3>Throughput Analysis</h3>
+
+            <p>
+                Experiment Manager simulations demonstrated stable
+                production output under varying workforce conditions.
+                Increasing worker count showed negligible improvement
+                because the printing stage constrained system throughput.
+            </p>
+
+        </div>
+
+        <!-- PANEL -->
+
+        <div class="analytics-card">
+
+            <h3>Theory of Constraints</h3>
+
+            <p>
+                Simulation results validated Theory of Constraints principles.
+                The manufacturing system performance was governed primarily
+                by printer cycle time rather than downstream assembly operations.
+            </p>
+
+        </div>
+
+        <!-- PANEL -->
+
+        <div class="analytics-card">
+
+            <h3>Printer Utilisation</h3>
+
+            <p>
+                Ultimaker and Bambu Lab printers operated as the dominant
+                production resources within the simulated factory environment.
+                Faster print cycles significantly improved production capability.
+            </p>
+
+        </div>
+
+        <!-- PANEL -->
+
+        <div class="analytics-card">
+
+            <h3>Operator Utilisation</h3>
+
+            <p>
+                Additional operators did not significantly improve throughput,
+                confirming that labour was not the critical manufacturing constraint
+                within the proposed production system.
+            </p>
+
         </div>
 
     </div>
 
 </section>
 
-<section class="section" id="dashboard">
+<section class="section dark" id="demo">
 
-    <h2 class="title">Digital Factory Analytics Dashboard</h2>
+    <div class="video-split">
 
-    <div class="mini-image" style="margin-top:40px;">
-        <img src="images/pfmea-table.png">
-        <span>Simulation analytics and manufacturing evaluation.</span>
+        <!-- LEFT SIDE -->
+
+        <div class="video-text">
+
+            <h2 class="title">Automated Assembly Demonstration</h2>
+
+            <p class="text">
+                The video below demonstrates the complete FESTO CP Lab workflow,
+                where the manufactured phone case successfully passes through
+                automated handling, measuring, and muscle press validation stations
+                within the Industry 4.0 assembly environment.
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="video-frame">
+
+            <video controls autoplay muted loop>
+                <source src="videos/festo_demo.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+</section>
+    
+<!-- ================= SIMULATION ================= -->
+
+<section class="section" id="simulation">
+
+    <div class="video-split">
+
+        <!-- LEFT SIDE -->
+
+        <div class="video-text">
+
+            <h2 class="title">Tecnomatix Simulation</h2>
+
+            <p class="text">
+                Simulation confirmed 52,160 annual output with 3D printing as the system bottleneck.
+                Worker scaling had no effect — only printer capacity matters.
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="video-frame">
+
+            <video controls autoplay muted loop>
+                <source src="videos/plant-simulation.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= LESSONS LEARNED ================= -->
+
+<section class="section dark" id="lessons">
+
+    <h2 class="title">Lessons Learned & Engineering Insights</h2>
+
+    <p class="text">
+        The project demonstrated that additive manufacturing is not simply
+        a printing process, but a complete engineering workflow involving
+        geometry interpretation, material behaviour, manufacturing constraints,
+        tolerance management and automated system integration.
+    </p>
+
+    <div class="insight-grid">
+
+        <!-- INSIGHT -->
+
+        <div class="insight-card">
+
+            <div class="insight-number">01</div>
+
+            <h3>Identical Parameters ≠ Identical Output</h3>
+
+            <p>
+                One of the most important observations was that identical
+                printer settings could still produce different dimensional results.
+                Manufacturing variability became highly visible during
+                snap-fit validation on the FESTO CP Lab system.
+            </p>
+
+        </div>
+
+        <!-- INSIGHT -->
+
+        <div class="insight-card">
+
+            <div class="insight-number">02</div>
+
+            <h3>Automation Exposes Design Weaknesses</h3>
+
+            <p>
+                Manual assembly could sometimes compensate for poor tolerances,
+                but automated pressing systems immediately exposed
+                dimensional inaccuracies and inconsistent fit behaviour.
+            </p>
+
+        </div>
+
+        <!-- INSIGHT -->
+
+        <div class="insight-card">
+
+            <div class="insight-number">03</div>
+
+            <h3>Print Orientation Impacts Functionality</h3>
+
+            <p>
+                Geometry orientation strongly affected surface finish,
+                support removal quality and QR readability.
+                Manufacturing decisions directly influenced final usability.
+            </p>
+
+        </div>
+
+        <!-- INSIGHT -->
+
+        <div class="insight-card">
+
+            <div class="insight-number">04</div>
+
+            <h3>Simulation Validated Manufacturing Theory</h3>
+
+            <p>
+                Tecnomatix simulation demonstrated that increasing labour
+                resources did not improve throughput.
+                Printer cycle time governed the entire production system.
+            </p>
+
+        </div>
+
+        <!-- INSIGHT -->
+
+        <div class="insight-card">
+
+            <div class="insight-number">05</div>
+
+            <h3>Design for Manufacturing Matters</h3>
+
+            <p>
+                CAD geometry alone does not guarantee manufacturability.
+                Successful production required balancing geometry,
+                tolerances, printability and automated assembly behaviour.
+            </p>
+
+        </div>
+
+        <!-- INSIGHT -->
+
+        <div class="insight-card">
+
+            <div class="insight-number">06</div>
+
+            <h3>Iteration Builds Engineering Knowledge</h3>
+
+            <p>
+                Failed prints, damaged supports and unsuccessful assemblies
+                became critical learning stages that improved final
+                manufacturing decisions and process understanding.
+            </p>
+
+        </div>
+
     </div>
 
 </section>
@@ -414,12 +1044,6 @@
 </footer>
 
 <script src="script.js"></script>
-
+    
 </body>
 </html>
-```
-
-
-
-}
-```
