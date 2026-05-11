@@ -1441,42 +1441,77 @@ footer {
 /* ==========================================
    VIDEO SPLIT SECTION
 ========================================== */
+
 .video-split {
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    gap: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+
     align-items: center;
-    margin-top: 40px;
+
+    gap: 80px;
+
+    margin-top: 50px;
 }
 
-/* LEFT SIDE */
+/* LEFT TEXT */
+
+.video-text {
+
+    flex: 1;
+}
+
 .video-text .text {
+
     max-width: 100%;
 }
 
-/* RIGHT SIDE */
+/* RIGHT VIDEO */
+
 .video-frame {
+
+    flex: 0 0 420px;
+
     display: flex;
-    justify-content: center;
+
+    justify-content: flex-end;
 }
 
 .video-frame video {
-    height: 750px;
+
+    height: 760px;
+
     width: auto;
+
     border-radius: 28px;
+
     border: 1px solid rgba(0,245,255,0.15);
+
     box-shadow:
         0 0 40px rgba(0,245,255,0.12);
 }
 
 /* MOBILE */
+
 @media (max-width: 1000px) {
+
     .video-split {
-        grid-template-columns: 1fr;
+
+        flex-direction: column;
+    }
+
+    .video-frame {
+
+        width: 100%;
+
+        justify-content: center;
     }
 
     .video-frame video {
+
         width: 100%;
+
         height: auto;
     }
 }
