@@ -2721,3 +2721,25 @@ footer {
     border-radius: 18px;
     display: block;
 }
+
+.diagram-glow{
+    position:absolute;
+    width:300px;
+    height:300px;
+
+    background:cyan;
+
+    filter:blur(140px);
+
+    opacity:0.12;
+
+    top:-100px;
+    right:-100px;
+
+    z-index:0;
+}
+
+.diagram-frame img{
+    position:relative;
+    z-index:2;
+}
