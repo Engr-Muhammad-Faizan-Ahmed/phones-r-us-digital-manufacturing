@@ -2814,3 +2814,40 @@ footer {
     color:#cfd8dc;
     line-height:1.7;
 }
+
+.business-diagram-wrap{
+    position:relative;
+    margin-top:80px;
+    border-radius:30px;
+    overflow:hidden;
+    padding:20px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(0,255,255,0.08);
+    box-shadow:
+    0 0 40px rgba(0,255,255,0.08);
+}
+
+.business-diagram-wrap img{
+    width:100%;
+    border-radius:20px;
+    transition:0.5s ease;
+}
+
+.business-diagram-wrap:hover img{
+    transform:scale(1.02);
+}
+
+.business-diagram-wrap::before{
+    content:'BUSINESS STRATEGY';
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:#00f0ff;
+    color:black;
+    padding:8px 16px;
+    border-radius:50px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    z-index:5;
+}
