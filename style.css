@@ -2914,7 +2914,7 @@ footer {
 
     width:240px;
 
-    height:360px;
+    min-height:340px;
 
     padding:35px 25px;
 
@@ -2932,12 +2932,6 @@ footer {
     transition:0.45s ease;
 
     text-align:center;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:flex-start;
 }
 
 .flow-step::before{
