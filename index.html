@@ -363,7 +363,23 @@
                     The very next day, the first bottom case was printed in black PLA.
                     Although the geometry was acceptable, the dark material made
                     edges, surface quality and dimensional details difficult to inspect.
-                    White PLA was later adopted for all future iterations.
+                    Under PrintCity lighting conditions, identifying layer inconsistencies
+                    and dimensional defects became challenging during visual inspection.
+                </p>
+                
+                <p>
+                    This became the first important manufacturing lesson of the project:
+                    material and colour selection directly influence quality assurance and
+                    inspection capability. Because of this, white PLA was adopted for
+                    all future iterations to improve visibility of edges, tolerances
+                    and support removal quality.
+                </p>
+                
+                <p>
+                    The induction and first print also changed my understanding of additive
+                    manufacturing. The workflow was not simply about operating a printer,
+                    but understanding geometry, tolerances, slicing parameters and
+                    manufacturability before starting production.
                 </p>
 
                 <ul>
@@ -398,6 +414,21 @@
                 <p>
                     Initial versions intentionally excluded the snap-fit mechanism to validate
                     the primary geometry before introducing tolerance-sensitive features.
+                    This reduced manufacturing variables during the early development stages
+                    and allowed dimensional verification of the core geometry first.
+                </p>
+                
+                <p>
+                    The top case required interpreting engineering drawings independently
+                    and rebuilding the geometry inside Fusion 360. This stage highlighted
+                    that dimensions which appear correct in CAD do not always translate
+                    directly into successful physical assemblies after printing.
+                </p>
+                
+                <p>
+                    After presenting the early iterations to the instructor, positive feedback
+                    on the rapid development progress provided confidence to continue the
+                    iterative manufacturing approach throughout the project.
                 </p>
         
             </div>
@@ -440,10 +471,34 @@
                 <h3>Parameter Optimisation & Print Iterations</h3>
 
                 <p>
-                    More than 50 print iterations were produced across Ultimaker S3,
+                    Around 30 print iterations were produced across Ultimaker S3,
                     Ultimaker S5 and Bambu Lab P1S printers.
                     Parameters including infill density, layer resolution,
                     print speed and support structures were continuously adjusted.
+                </p>
+                
+                <p>
+                    From Week 4 onwards, PrintCity became part of my daily routine.
+                    Even on lecture days starting at 9 AM, I would arrive around 8 AM
+                    to begin prints before attending classes on Mondays, Tuesdays and Fridays.
+                    This allowed long-duration prints to run during lectures and maximised
+                    machine usage throughout the week.
+                </p>
+                
+                <p>
+                    A major challenge during this stage was achieving consistent snap-fit
+                    tolerances. Some cases became excessively tight during assembly while
+                    others were too loose to remain secure. Small parameter changes,
+                    print orientation and printer variation significantly affected
+                    final dimensional behaviour.
+                </p>
+                
+                <p>
+                    The iterative process gradually shifted from simply producing printable
+                    geometry toward Design for Manufacturing principles. Features that appeared
+                    acceptable in CAD sometimes failed during physical testing,
+                    demonstrating the difference between digital design and real manufacturing
+                    performance.
                 </p>
             </div>
 
@@ -480,6 +535,19 @@
                     The QR code linked directly to a digital manufacturing record PDF,
                     creating a component-level digital twin system.
                 </p>
+                
+                <p>
+                    This transformed the printed component from a simple physical part
+                    into a traceable cyber-physical product aligned with Industry 4.0
+                    manufacturing principles. Each manufactured case could be connected
+                    directly to its digital manufacturing data and production history.
+                </p>
+                
+                <p>
+                    Embedding the QR geometry introduced additional manufacturing complexity.
+                    Small feature dimensions, dual-colour alignment and surface quality
+                    significantly affected QR readability after printing.
+                </p>
             </div>
 
         <div class="gallery-frame">
@@ -507,6 +575,27 @@
                     Final iterations were tested on the FESTO CP Lab automated assembly line.
                     The measuring station validated dimensional accuracy,
                     while the muscle press station verified snap-fit assembly behaviour.
+                </p>
+                
+                <p>
+                    Week 8 represented the transition from prototyping toward automated
+                    manufacturing validation. Several cases successfully passed individual
+                    stations, while others failed due to excessive tightness,
+                    loose tolerances or inconsistent snap-fit engagement.
+                </p>
+                
+                <p>
+                    The automated system exposed issues that were not immediately visible
+                    during manual inspection. Some parts appeared acceptable by hand
+                    but failed under automated pressing conditions,
+                    highlighting the importance of dimensional consistency
+                    within cyber-physical manufacturing systems.
+                </p>
+                
+                <p>
+                    Each tested case was physically marked and analysed after running through
+                    the conveyor system to identify which geometries and parameter combinations
+                    produced the most reliable manufacturing performance.
                 </p>
             </div>
 
@@ -549,8 +638,24 @@
                 <h3>Final Recovery & Submission</h3>
                 
                 <p>
-                    Multiple physical iterations were lost before submission.
-                    Final parts were rebuilt using accumulated engineering knowledge.
+                    An unexpected setback occurred shortly before submission when several
+                    zipped bags containing physical print iterations were accidentally
+                    left on public transport while travelling to PrintCity.
+                    The lost parts represented weeks of iterative manufacturing work.
+                </p>
+                
+                <p>
+                    With only two days remaining before the deadline,
+                    the focus shifted from experimentation toward rapid recovery
+                    and decision-making. Previously gained manufacturing knowledge
+                    was used to prioritise the most successful geometries,
+                    tolerances and slicing parameters.
+                </p>
+                
+                <p>
+                    Instead of restarting the entire development cycle,
+                    the final validated cases were rebuilt using lessons learned
+                    throughout earlier failures, testing and FESTO validation stages.
                 </p>
             </div>
         
@@ -874,6 +979,65 @@
 
 </section>
 
+<!-- ================= PROCESS FLOW ================= -->
+
+<section class="section dark" id="processflow">
+
+    <h2 class="title">Manufacturing Process Flow</h2>
+
+    <p class="text">
+        The manufacturing workflow followed a structured additive manufacturing
+        process beginning from CAD modelling through automated FESTO validation
+        and final manufacturing verification.
+    </p>
+
+    <div class="project-gallery">
+        <img src="images/process-flow.png">
+    </div>
+
+    <div class="industry-grid">
+
+        <div class="industry-card">
+            <h3>CAD Design</h3>
+            <p>
+                Phone case geometry developed and refined inside Fusion 360.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Slicing & Parameters</h3>
+            <p>
+                Layer height, infill density and support structures configured
+                for manufacturing optimisation.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>3D Printing</h3>
+            <p>
+                Iterative production performed using Ultimaker and Bambu Lab
+                additive manufacturing systems.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Inspection</h3>
+            <p>
+                Surface quality, dimensions and support removal behaviour evaluated.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>FESTO Validation</h3>
+            <p>
+                Automated measuring and muscle press stations validated assembly behaviour.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+    
 <!-- ================= PFMEA ================= -->
 
 <section class="section" id="pfmea">
@@ -943,6 +1107,52 @@
 
 </section>
 
+<!-- ================= VALUE STREAM MAP ================= -->
+
+<section class="section" id="valuestream">
+
+    <h2 class="title">Value Stream Analysis</h2>
+
+    <p class="text">
+        A simplified Value Stream analysis was performed to identify
+        manufacturing bottlenecks, non-value-added activities
+        and process delays throughout the production workflow.
+    </p>
+
+    <div class="split-card">
+
+        <div class="split-left">
+
+            <p>
+                The analysis demonstrated that additive manufacturing
+                represented the primary production bottleneck due to
+                long printing durations compared to downstream validation stages.
+            </p>
+
+            <p>
+                Waiting time between print completion, support removal,
+                inspection and FESTO validation contributed significantly
+                to the total manufacturing lead time.
+            </p>
+
+            <p>
+                These observations later aligned closely with Tecnomatix
+                simulation results, which identified printer utilisation
+                as the dominant system constraint.
+            </p>
+
+        </div>
+
+        <div class="split-right">
+
+            <img src="images/value-stream-map.png">
+
+        </div>
+
+    </div>
+
+</section>
+    
 <!-- ================= FESTO PROCESS FLOW ================= -->
 
 <section class="section dark" id="cpflow">
@@ -1285,6 +1495,67 @@
 
 </section>
 
+<!-- ================= BUSINESS MODEL ================= -->
+
+<section class="section dark" id="businessmodel">
+
+    <h2 class="title">Business Model Canvas</h2>
+
+    <p class="text">
+        A simplified Business Model Canvas was developed to evaluate
+        the commercial potential of low-volume customised phone case
+        manufacturing using additive manufacturing technologies.
+    </p>
+
+    <div class="project-gallery">
+        <img src="images/business-model-canvas.png">
+    </div>
+
+    <div class="industry-grid">
+
+        <div class="industry-card">
+            <h3>Value Proposition</h3>
+            <p>
+                Rapid customised phone case manufacturing with integrated
+                digital traceability and flexible production capability.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Key Resources</h3>
+            <p>
+                Additive manufacturing systems, FESTO CP Lab,
+                CAD software and simulation tools.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Key Activities</h3>
+            <p>
+                CAD development, iterative printing,
+                quality validation and automated testing.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Customer Segment</h3>
+            <p>
+                Low-volume customised manufacturing and rapid prototyping markets.
+            </p>
+        </div>
+
+        <div class="industry-card">
+            <h3>Revenue Potential</h3>
+            <p>
+                Flexible manufacturing with reduced tooling costs
+                compared to traditional mass production approaches.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+    
 <!-- ================= LESSONS LEARNED ================= -->
 
 <section class="section dark" id="lessons">
