@@ -3035,8 +3035,8 @@ footer {
 .industry-architecture{
     position:relative;
     width:100%;
-    min-height:1100px;
-    margin-top:80px;
+    height:1400px;
+    margin-top:100px;
 }
 
 .industry-core{
@@ -3116,17 +3116,21 @@ footer {
 
 .pillar{
     position:absolute;
-    width:250px;
-    padding:25px;
-    border-radius:24px;
+    width:240px;
+    min-height:210px;
+    padding:24px;
+    border-radius:28px;
     background:
     rgba(255,255,255,0.03);
     border:
     1px solid rgba(0,255,255,0.12);
-    backdrop-filter:blur(10px);
-    transition:0.4s;
-
+    backdrop-filter:blur(12px);
     text-align:center;
+    transition:0.45s ease;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
 }
 
 .pillar:hover{
@@ -3156,50 +3160,70 @@ footer {
     font-size:0.92rem;
 }
 
+/* TOP */
+
 .pillar1{
-    top:0%;
+    top:0px;
     left:50%;
     transform:translateX(-50%);
 }
+
+/* TOP RIGHT */
 
 .pillar2{
-    top:12%;
-    right:4%;
+    top:120px;
+    right:40px;
 }
+
+/* RIGHT */
 
 .pillar3{
-    top:38%;
-    right:0%;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
 }
+
+/* BOTTOM RIGHT */
 
 .pillar4{
-    bottom:18%;
-    right:6%;
+    bottom:120px;
+    right:40px;
 }
 
+/* BOTTOM */
+
 .pillar5{
-    bottom:0%;
+    bottom:0px;
     left:50%;
     transform:translateX(-50%);
 }
 
+/* BOTTOM LEFT */
+
 .pillar6{
-    bottom:18%;
-    left:6%;
+    bottom:120px;
+    left:40px;
 }
+
+/* LEFT */
 
 .pillar7{
-    top:38%;
-    left:0%;
+    top:50%;
+    left:0px;
+    transform:translateY(-50%);
 }
+
+/* TOP LEFT */
 
 .pillar8{
-    top:12%;
-    left:4%;
+    top:120px;
+    left:40px;
 }
 
+/* INNER LOWER */
+
 .pillar9{
-    top:72%;
+    bottom:320px;
     left:50%;
     transform:translateX(-50%);
 }
@@ -3216,78 +3240,89 @@ footer {
 .connector{
     position:absolute;
     background:
-    linear-gradient(
-        90deg,
-        rgba(0,255,255,0.5),
-        rgba(0,255,255,0.05)
-    );
+    rgba(0,255,255,0.35);
+    z-index:0;
+}
 
-    height:2px;
+/* ARROW HEAD */
+.connector::after{
+    content:"";
+    position:absolute;
+    width:12px;
+    height:12px;
+    border-top:
+    2px solid #00f0ff;
+    border-right:
+    2px solid #00f0ff;
+    right:-2px;
+    top:-5px;
+
+    transform:rotate(45deg);
 }
 
 .pillar1 .connector{
-    width:180px;
-    bottom:-90px;
+    width:2px;
+    height:170px;
+    bottom:-170px;
     left:50%;
-    transform:
-    translateX(-50%)
-    rotate(90deg);
 }
 
 .pillar2 .connector{
-    width:240px;
-    left:-170px;
-    bottom:20px;
-    transform:rotate(28deg);
+    width:220px;
+    height:2px;
+    left:-180px;
+    bottom:25px;
+    transform:rotate(30deg);
 }
 
 .pillar3 .connector{
-    width:180px;
-    left:-160px;
+    width:170px;
+    height:2px;
+    left:-170px;
     top:50%;
 }
 
 .pillar4 .connector{
     width:220px;
-    left:-170px;
-    top:20px;
-    transform:rotate(-28deg);
+    height:2px;
+    left:-180px;
+    top:25px;
+    transform:rotate(-30deg);
 }
 
 .pillar5 .connector{
-    width:180px;
-    top:-90px;
+    width:2px;
+    height:170px;
+    top:-170px;
     left:50%;
-    transform:
-    translateX(-50%)
-    rotate(90deg);
 }
 
 .pillar6 .connector{
     width:220px;
-    right:-170px;
-    top:20px;
-    transform:rotate(28deg);
+    height:2px;
+    right:-180px;
+    top:25px;
+    transform:rotate(30deg);
 }
 
 .pillar7 .connector{
-    width:180px;
-    right:-160px;
+    width:170px;
+    height:2px;
+    right:-170px;
     top:50%;
 }
 
 .pillar8 .connector{
-    width:240px;
-    right:-170px;
-    bottom:20px;
-    transform:rotate(-28deg);
+    width:220px;
+    height:2px;
+    right:-180px;
+    bottom:25px;
+    transform:rotate(-30deg);
 }
 
 .pillar9 .connector{
-    width:140px;
-    top:-70px;
+    width:2px;
+    height:120px;
+    top:-120px;
     left:50%;
-    transform:
-    translateX(-50%)
-    rotate(90deg);
 }
