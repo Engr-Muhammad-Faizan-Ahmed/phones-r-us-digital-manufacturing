@@ -1534,122 +1534,119 @@ ou
 
 <section class="section" id="simulation">
 
-    <div class="video-split">
+    <!-- TEXT CONTENT -->
 
-        <!-- LEFT SIDE -->
+    <div class="simulation-content">
 
-        <div class="video-text">
-        
-            <h2 class="title">Tecnomatix Simulation</h2>
-        
-            <p class="text">
-                Tecnomatix Plant Simulation was used to evaluate production throughput,
-                resource utilisation, worker scaling and manufacturing bottlenecks
-                within the proposed Industry 4.0 production system.
+        <h2 class="title">Tecnomatix Simulation</h2>
+
+        <p class="text">
+            Tecnomatix Plant Simulation was used to evaluate production throughput,
+            resource utilisation, bottlenecks and worker scaling behaviour
+            within the proposed Industry 4.0 manufacturing system.
+        </p>
+
+        <!-- STATS -->
+
+        <div class="sim-stats-grid">
+
+            <div class="sim-stat-card">
+                <h3>50,256</h3>
+                <span>Maximum Annual Output</span>
+            </div>
+
+            <div class="sim-stat-card">
+                <h3>95%</h3>
+                <span>Printer Availability</span>
+            </div>
+
+            <div class="sim-stat-card">
+                <h3>5%</h3>
+                <span>Failure / Maintenance</span>
+            </div>
+
+            <div class="sim-stat-card">
+                <h3>02h 30m</h3>
+                <span>MTTR Duration</span>
+            </div>
+
+        </div>
+
+        <!-- ANALYSIS -->
+
+        <div class="simulation-analysis">
+
+            <p>
+                Experiment Manager analysis was conducted to investigate
+                how increasing workforce size affected annual production output.
+                Ten experiments were executed with worker counts
+                ranging from 1 to 10 operators.
             </p>
-        
-            <!-- SIMULATION STATS -->
-        
-            <div class="sim-stats-grid">
-        
-                <div class="sim-stat-card">
-                    <h3>50,256</h3>
-                    <span>Maximum Annual Output</span>
-                </div>
-        
-                <div class="sim-stat-card">
-                    <h3>95%</h3>
-                    <span>Printer Availability</span>
-                </div>
-        
-                <div class="sim-stat-card">
-                    <h3>5%</h3>
-                    <span>Failure / Maintenance Rate</span>
-                </div>
-        
-                <div class="sim-stat-card">
-                    <h3>02h 30m</h3>
-                    <span>MTTR (Maintenance)</span>
-                </div>
-        
-            </div>
-        
-            <!-- ANALYSIS TEXT -->
-        
-            <div class="simulation-analysis">
-        
-                <p>
-                    Experiment Manager analysis was performed to investigate
-                    the effect of increasing workforce size on annual production output.
-                    Ten simulation experiments were executed with worker counts
-                    ranging from 1 to 10 operators.
-                </p>
-        
-                <p>
-                    Results showed that production output increased only marginally
-                    from approximately 50,040 units to 50,256 units annually,
-                    after which the system reached saturation.
-                </p>
-        
-                <p>
-                    This confirmed that labour was not the primary manufacturing constraint.
-                    Instead, printer cycle time and machine availability governed
-                    the overall system throughput, validating Theory of Constraints principles.
-                </p>
-        
-            </div>
-        
-            <!-- MINI RESULTS TABLE -->
-        
-            <div class="sim-table">
-        
-                <div class="sim-row sim-header">
-                    <div>Workers</div>
-                    <div>Annual Output</div>
-                </div>
-        
-                <div class="sim-row">
-                    <div>1</div>
-                    <div>50,040</div>
-                </div>
-        
-                <div class="sim-row">
-                    <div>3</div>
-                    <div>50,240</div>
-                </div>
-        
-                <div class="sim-row">
-                    <div>5</div>
-                    <div>50,256</div>
-                </div>
-        
-                <div class="sim-row">
-                    <div>10</div>
-                    <div>50,256</div>
-                </div>
-        
-            </div>
-        
-            <!-- DOWNLOAD BUTTON -->
-        
-            <a href="files/plant-simulation-model.spp"
-               class="download-btn"
-               download>
-        
-               ⬇ Download Tecnomatix Plant Simulation Model
-        
-            </a>
-        
-        </div>
-        <!-- RIGHT SIDE -->
 
-        <div class="video-frame">
+            <p>
+                Results demonstrated that increasing operators produced
+                only marginal throughput improvements, with production saturating
+                around 50,256 units annually.
+            </p>
 
-            <video controls autoplay muted loop>
-                <source src="videos/plant-simulation.mp4" type="video/mp4">
-            </video>
+            <p>
+                The findings confirmed that printer cycle time and machine availability,
+                rather than labour availability, governed overall system performance.
+                This validated Theory of Constraints principles within the manufacturing workflow.
+            </p>
 
         </div>
+
+        <!-- MINI TABLE -->
+
+        <div class="sim-table">
+
+            <div class="sim-row sim-header">
+                <div>Workers</div>
+                <div>Annual Output</div>
+            </div>
+
+            <div class="sim-row">
+                <div>1</div>
+                <div>50,040</div>
+            </div>
+
+            <div class="sim-row">
+                <div>3</div>
+                <div>50,240</div>
+            </div>
+
+            <div class="sim-row">
+                <div>5</div>
+                <div>50,256</div>
+            </div>
+
+            <div class="sim-row">
+                <div>10</div>
+                <div>50,256</div>
+            </div>
+
+        </div>
+
+        <!-- DOWNLOAD -->
+
+        <a href="files/plant-simulation-model.spp"
+           class="download-btn"
+           download>
+
+           ⬇ Download Tecnomatix Plant Simulation Model
+
+        </a>
+
+    </div>
+
+    <!-- TOP IMAGE / VIDEO -->
+
+    <div class="simulation-hero">
+
+        <video controls autoplay muted loop>
+            <source src="videos/plant-simulation.mp4" type="video/mp4">
+        </video>
 
     </div>
 
