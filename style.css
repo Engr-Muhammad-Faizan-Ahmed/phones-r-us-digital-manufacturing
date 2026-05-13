@@ -3481,3 +3481,87 @@ footer {
     line-height:1.8;
     font-size:0.95rem;
 }
+
+/* ================= SIMULATION STATS ================= */
+
+.sim-stats-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin:35px 0;
+}
+
+.sim-stat-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:25px;
+    transition:0.35s;
+    backdrop-filter:blur(10px);
+}
+
+.sim-stat-card:hover{
+    transform:translateY(-5px);
+    border-color:#00d9ff;
+    box-shadow:0 0 25px rgba(0,217,255,0.15);
+}
+
+.sim-stat-card h3{
+    font-size:2rem;
+    color:#00d9ff;
+    margin-bottom:10px;
+}
+
+.sim-stat-card span{
+    color:#cfcfcf;
+    font-size:0.95rem;
+}
+
+/* ================= ANALYSIS BOX ================= */
+
+.simulation-analysis{
+    margin-top:30px;
+}
+
+.simulation-analysis p{
+    margin-bottom:18px;
+    line-height:1.8;
+    color:#d8d8d8;
+}
+
+/* ================= MINI TABLE ================= */
+
+.sim-table{
+    margin-top:35px;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.sim-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:16px 22px;
+    background:rgba(255,255,255,0.03);
+    border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.sim-header{
+    background:rgba(0,217,255,0.12);
+    font-weight:600;
+    color:white;
+}
+
+.sim-row:last-child{
+    border-bottom:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .sim-stats-grid{
+        grid-template-columns:1fr;
+    }
+
+}
