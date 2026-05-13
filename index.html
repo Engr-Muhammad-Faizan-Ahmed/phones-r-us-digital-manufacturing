@@ -1,3 +1,4 @@
+ou
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1235,38 +1236,134 @@
 
     <p class="text">
         A simplified Value Stream analysis was performed to identify
-        manufacturing bottlenecks, non-value-added activities
-        and process delays throughout the production workflow.
+        manufacturing bottlenecks, process delays and non-value-added
+        activities throughout the additive manufacturing workflow.
     </p>
 
-    <div class="split-card">
+    <!-- HIGHLIGHT -->
 
-        <div class="split-left">
+    <div class="process-highlight">
+        Tecnomatix simulation later confirmed 3D printing as the primary
+        manufacturing bottleneck within the production system.
+    </div>
+
+    <!-- VALUE STREAM FLOW -->
+
+    <div class="value-stream-grid">
+
+        <!-- STEP 1 -->
+
+        <div class="value-card">
+
+            <div class="card-line"></div>
+
+            <div class="value-icon">⌘</div>
+
+            <h3>CAD Design</h3>
 
             <p>
-                The analysis demonstrated that additive manufacturing
-                represented the primary production bottleneck due to
-                long printing durations compared to downstream validation stages.
+                Initial geometry creation and iterative design refinement
+                performed inside Fusion 360.
             </p>
 
-            <p>
-                Waiting time between print completion, support removal,
-                inspection and FESTO validation contributed significantly
-                to the total manufacturing lead time.
-            </p>
-
-            <p>
-                These observations later aligned closely with Tecnomatix
-                simulation results, which identified printer utilisation
-                as the dominant system constraint.
-            </p>
+            <span>Value Added</span>
 
         </div>
 
-        <div class="diagram-frame">
-            <div class="diagram-glow"></div>
-            <img src="images/value-stream-map.png">
+        <div class="value-arrow">➜</div>
+
+        <!-- STEP 2 -->
+
+        <div class="value-card bottleneck-card">
+
+            <div class="card-line"></div>
+
+            <div class="value-icon">⬢</div>
+
+            <h3>3D Printing</h3>
+
+            <p>
+                Additive manufacturing stage identified as the dominant
+                production bottleneck due to long cycle times.
+            </p>
+
+            <span>Bottleneck</span>
+
         </div>
+
+        <div class="value-arrow">➜</div>
+
+        <!-- STEP 3 -->
+
+        <div class="value-card">
+
+            <div class="card-line"></div>
+
+            <div class="value-icon">◎</div>
+
+            <h3>Inspection</h3>
+
+            <p>
+                Surface finish, support removal quality and dimensional
+                consistency evaluated manually.
+            </p>
+
+            <span>Quality Check</span>
+
+        </div>
+
+        <div class="value-arrow">➜</div>
+
+        <!-- STEP 4 -->
+
+        <div class="value-card">
+
+            <div class="card-line"></div>
+
+            <div class="value-icon">◉</div>
+
+            <h3>QR Traceability</h3>
+
+            <p>
+                Digital manufacturing record linked directly
+                to each validated phone case.
+            </p>
+
+            <span>Digital Twin</span>
+
+        </div>
+
+        <div class="value-arrow">➜</div>
+
+        <!-- STEP 5 -->
+
+        <div class="value-card">
+
+            <div class="card-line"></div>
+
+            <div class="value-icon">⚙</div>
+
+            <h3>FESTO Validation</h3>
+
+            <p>
+                Automated measuring and muscle press stations
+                verified assembly compatibility.
+            </p>
+
+            <span>Automation</span>
+
+        </div>
+
+    </div>
+
+    <!-- IMAGE -->
+
+    <div class="business-diagram-wrap">
+
+        <div class="diagram-glow"></div>
+
+        <img src="images/value-stream-map.png">
+
     </div>
 
 </section>
