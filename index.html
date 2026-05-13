@@ -1230,133 +1230,46 @@ ou
 
 <!-- ================= VALUE STREAM MAP ================= -->
 
+<<!-- ================= VALUE STREAM MAP ================= -->
+
 <section class="section" id="valuestream">
 
     <h2 class="title">Value Stream Analysis</h2>
 
     <p class="text">
-        A simplified Value Stream analysis was performed to identify
-        manufacturing bottlenecks, process delays and non-value-added
-        activities throughout the additive manufacturing workflow.
+        A simplified Value Stream Analysis was performed to evaluate
+        process flow efficiency, manufacturing delays and bottlenecks
+        throughout the additive manufacturing workflow.
     </p>
 
     <!-- HIGHLIGHT -->
 
     <div class="process-highlight">
-        Tecnomatix simulation later confirmed 3D printing as the primary
-        manufacturing bottleneck within the production system.
+        Tecnomatix simulation and physical manufacturing observations
+        both identified 3D printing as the primary production bottleneck.
     </div>
 
-    <!-- VALUE STREAM FLOW -->
+    <!-- TEXT CONTENT -->
 
-    <div class="value-stream-grid">
+    <div class="value-stream-content">
 
-        <!-- STEP 1 -->
+        <p>
+            The analysis showed that printing duration represented
+            the largest portion of total manufacturing lead time,
+            while downstream FESTO validation stages remained
+            comparatively underutilised.
+        </p>
 
-        <div class="value-card">
-
-            <div class="card-line"></div>
-
-            <div class="value-icon">⌘</div>
-
-            <h3>CAD Design</h3>
-
-            <p>
-                Initial geometry creation and iterative design refinement
-                performed inside Fusion 360.
-            </p>
-
-            <span>Value Added</span>
-
-        </div>
-
-        <div class="value-arrow">➜</div>
-
-        <!-- STEP 2 -->
-
-        <div class="value-card bottleneck-card">
-
-            <div class="card-line"></div>
-
-            <div class="value-icon">⬢</div>
-
-            <h3>3D Printing</h3>
-
-            <p>
-                Additive manufacturing stage identified as the dominant
-                production bottleneck due to long cycle times.
-            </p>
-
-            <span>Bottleneck</span>
-
-        </div>
-
-        <div class="value-arrow">➜</div>
-
-        <!-- STEP 3 -->
-
-        <div class="value-card">
-
-            <div class="card-line"></div>
-
-            <div class="value-icon">◎</div>
-
-            <h3>Inspection</h3>
-
-            <p>
-                Surface finish, support removal quality and dimensional
-                consistency evaluated manually.
-            </p>
-
-            <span>Quality Check</span>
-
-        </div>
-
-        <div class="value-arrow">➜</div>
-
-        <!-- STEP 4 -->
-
-        <div class="value-card">
-
-            <div class="card-line"></div>
-
-            <div class="value-icon">◉</div>
-
-            <h3>QR Traceability</h3>
-
-            <p>
-                Digital manufacturing record linked directly
-                to each validated phone case.
-            </p>
-
-            <span>Digital Twin</span>
-
-        </div>
-
-        <div class="value-arrow">➜</div>
-
-        <!-- STEP 5 -->
-
-        <div class="value-card">
-
-            <div class="card-line"></div>
-
-            <div class="value-icon">⚙</div>
-
-            <h3>FESTO Validation</h3>
-
-            <p>
-                Automated measuring and muscle press stations
-                verified assembly compatibility.
-            </p>
-
-            <span>Automation</span>
-
-        </div>
+        <p>
+            Additional delays were introduced during support removal,
+            dimensional inspection and print handling between stations.
+            These findings aligned closely with the simulation-based
+            throughput analysis performed later in the project.
+        </p>
 
     </div>
 
-    <!-- IMAGE -->
+    <!-- VALUE STREAM IMAGE -->
 
     <div class="business-diagram-wrap">
 
