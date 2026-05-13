@@ -3437,3 +3437,17 @@ footer {
     transform:scale(1.02);
 }
 
+.value-stream-diagram-wrap::before{
+    content:'';
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:#00f0ff;
+    color:black;
+    padding:8px 16px;
+    border-radius:50px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    z-index:5;
+}
