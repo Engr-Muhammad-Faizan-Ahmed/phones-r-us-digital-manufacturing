@@ -3414,3 +3414,26 @@ footer {
     }
 
 }
+
+.value-stream-diagram-wrap{
+    position:relative;
+    margin-top:80px;
+    border-radius:30px;
+    overflow:hidden;
+    padding:20px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(0,255,255,0.08);
+    box-shadow:
+    0 0 40px rgba(0,255,255,0.08);
+}
+
+.value-stream-diagram-wrap img{
+    width:100%;
+    border-radius:20px;
+    transition:0.5s ease;
+}
+
+.value-stream-diagram-wrap:hover img{
+    transform:scale(1.02);
+}
+
